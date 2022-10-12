@@ -1,4 +1,7 @@
 
+.main-container{
+    height:100vh;
+}
 .heading{
     z-index: -1;
     position: absolute;
@@ -18,23 +21,20 @@
 }
 
 .image-container{
-    height: 100vh;
     z-index: 1;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:auto;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height:inherit;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 @media only screen and (max-width: 600px) {
-    img {
-      width: 800px;
-    }
 
     .heading h2{
         font-size: 1.5rem;
@@ -46,11 +46,7 @@
     }
   }
 
-img{
-    min-width: 600px;
-    max-width: 1080px;
-    object-fit: cover;
-}
+
 
 @keyframes moveImage {
     0%    { transform: translateY(0) }
@@ -59,8 +55,6 @@ img{
   }
 
 .socials-container{
-    padding: 0;
-    margin: 0;
     position: fixed;
     right: 2rem;
     bottom: 2rem;
