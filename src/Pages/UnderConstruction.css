@@ -23,9 +23,6 @@
 .image-container{
     z-index: 1;
     width:100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;*/
     height:inherit;
 
     background:url(../Images/under-construction.png);
@@ -34,11 +31,6 @@
     background-position: center;
 
 }
-
-/* .image-container img{
-    width:1080px;
-    height: auto;
-} */
 
 @media only screen and (max-width: 600px) {
 

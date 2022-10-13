@@ -1,6 +1,5 @@
 import React from 'react'
 import './UnderConstruction.css'
-import LandingImage from '../Images/under-construction.png'
 
 function UnderConstruction() {
   return (
@@ -8,9 +7,7 @@ function UnderConstruction() {
         <div className='heading'>
             <h2>UNDER CONSTRUCTION</h2>
         </div>
-        <div className='image-container'>
-            {/* <img src={LandingImage} alt="under construction" /> */}
-        </div>
+        <div className='image-container'></div>
         <div className='socials-container'>
           <p>Theorox Studios</p>
           <div className='social-icons'>
