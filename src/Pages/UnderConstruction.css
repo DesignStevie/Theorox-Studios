@@ -44,7 +44,14 @@
     }
 
     .image-container{
-        background-size:800px;
+        background-size:650px;
+    }
+    svg{
+        width:24px;
+        height:24px;
+    }
+    .socials-container p{
+       font-size: 0.875rem;
     }
   }
 
