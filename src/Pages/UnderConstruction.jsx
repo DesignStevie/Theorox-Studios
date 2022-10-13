@@ -9,7 +9,7 @@ function UnderConstruction() {
             <h2>UNDER CONSTRUCTION</h2>
         </div>
         <div className='image-container'>
-            <img src={LandingImage} alt="under construction" />
+            {/* <img src={LandingImage} alt="under construction" /> */}
         </div>
         <div className='socials-container'>
           <p>Theorox Studios</p>

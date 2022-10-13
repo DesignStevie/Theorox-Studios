@@ -22,17 +22,23 @@
 
 .image-container{
     z-index: 1;
-    display: flex;
+    width:100%;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     height:inherit;
 
+    background:url(../Images/under-construction.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
-img{
-    width: 100%;
+/* .image-container img{
+    width:1080px;
     height: auto;
-}
+} */
 
 @media only screen and (max-width: 600px) {
 
@@ -43,6 +49,10 @@ img{
 
     .heading{
         top:6rem;
+    }
+
+    .image-container{
+        background-size:800px;
     }
   }
 
