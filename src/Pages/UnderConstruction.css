@@ -10,12 +10,12 @@
     left:0;
     text-align: center;
     animation: moveImage 5s infinite;
-}
+    font-weight: 600;}
 
 .heading h2{
     width: 100%;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1rem;
     margin: 0 auto;
 }
@@ -50,11 +50,13 @@
         width:24px;
         height:24px;
     }
-    .socials-container p{
+    .studioName{
        font-size: 0.875rem;
     }
+    .myName{
+        font-size: 0.8rem !important;
+    }
   }
-
 
 
 @keyframes moveImage {
@@ -75,10 +77,26 @@
 
 .socials-container p{
     margin: 0;
+    padding: 0;
 }
-
+.myName{
+    font-size: 0.920rem;
+    font-weight: 600;
+}
 .social-icons{
     display: flex;
     gap: 1.1rem;
+}
+
+.textTag{
+    text-decoration: none;
+    color:#007bff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 0.875rem;
+    font-weight: 400;
 }
 
