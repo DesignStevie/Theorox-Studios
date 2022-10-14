@@ -10,7 +10,7 @@ function UnderConstruction() {
         </div>
         <div className='image-container'></div>
         <div className='socials-container'>
-          <div className='text-container'>
+          <div className='social-text-container'>
           <p className='myName'>Steven Odendaal</p>
           <p className='studioName'>Theorox Studios</p>
           </div>
