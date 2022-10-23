@@ -1,6 +1,5 @@
 import React from 'react'
 import './UnderConstruction.css'
-import {Link} from 'react-router-dom'
 
 function UnderConstruction() {
   return (
@@ -26,7 +25,7 @@ function UnderConstruction() {
             </svg>
           </div>
         </div>
-        <Link to="./gotem" className='textTag'>Oh! Hey Brady, clicky me</Link>
+        <p className='textTag'>Time for a refresh!</p>
     </div>
   )
 }
