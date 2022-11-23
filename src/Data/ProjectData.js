@@ -1,4 +1,4 @@
-export default[
+const projectData = [
     {
         id: 0,
         projectName: "Project 01",
@@ -21,3 +21,5 @@ export default[
         image:require("../Images/temp03.jpg")
     }
 ]
+
+export default projectData
