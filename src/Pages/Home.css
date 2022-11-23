@@ -1,0 +1,75 @@
+.page-body{
+    max-width: 60rem;
+    min-width: 40rem;
+    padding: 0rem 4rem;
+    margin: 0 auto;
+}
+
+.home-header{
+    margin-top: 10rem ;
+}
+.home-header-background{
+    width: 100%;
+    min-height: 40rem ;
+    position: absolute;
+    background-image: linear-gradient(120deg,rgba( 255 255 255 / 0),rgba( 255 255 255 / 0), rgba(93 79 255 / 1));
+    z-index: -1;
+    top:0;
+    left: 0; 
+    right: 0; 
+}
+.home-header h1{
+    font-size: 4rem;
+    margin-top: -1rem;
+    color: #2e2e2e;
+}
+.header-title{
+  width: 50%;
+    margin: 3rem 0rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #2e2e2e;
+}
+
+.roundbutton{
+    min-width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
+
+  .primary-button{
+    color:#fff;
+    background-color: #5D4FFF;
+  }
+
+  .primary-button:hover{
+    opacity: 0.9;
+  }
+
+  .home-header-socials{
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .home-header-buttons{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .section-container{
+    margin-top: 12rem;
+  }
+
+  .section-container h2{
+    margin-bottom: 1rem;
+  }
+  
+  .home-importanceofux-container, .home-aboutme-container{
+    width:60%;
+  }

@@ -1,0 +1,71 @@
+.my-process{
+    display: flex;
+    flex-direction: row;
+}
+
+.process-buttons-container{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.process-button{
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    background-color: #5D4FFF;
+
+    border-width: 2px 0px 2px 2px;
+    border-style: solid;
+    border-color: #5D4FFF;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+
+    display: flex;
+    vertical-align: center;
+    cursor: pointer;
+}
+.process-button:hover{
+    opacity: 0.9;
+}
+.process-button svg{
+    display: block;
+    align-items: center;
+    margin: auto;
+    fill: #fff;
+}
+
+.active{
+    color: #5D4FFF;
+    background-color: #fff;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    cursor:auto;
+}
+
+.active svg{
+    fill:#5D4FFF;
+}
+
+.active:hover{
+    opacity: 1;
+}
+
+
+.process-display-container{
+    width:100%;
+    padding: 1.5rem;
+    margin-left: -2px;
+    z-index: -1;
+    border-style: solid;
+    border-color: #5D4FFF;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.process-display-container h4{
+    color: #5D4FFF;
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.process-display-container p{
+    max-width:25rem;
+}

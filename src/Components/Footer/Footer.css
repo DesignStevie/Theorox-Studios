@@ -1,0 +1,30 @@
+footer{
+    margin-top: 12.5rem;
+    background-color: #2e2e2e;
+}
+
+.footer-container{
+    padding: 4rem;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.footer-list{
+    color:#fff;
+}
+.footer-list h4{
+    margin-bottom: 1rem;
+}
+
+.footer-list p{
+    margin-bottom: 0.5rem;
+}
+
+.footer-madeby{
+    padding:4rem 0rem;
+    text-align: center;
+    color: #fff;
+}
