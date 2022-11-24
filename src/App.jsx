@@ -1,11 +1,10 @@
-import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import UnderConstruction from './UnderConstruction'
-import Home from './Home';
-import UXUIWork from './UXUIWork';
-import ArtAndDesign from './ArtAndDesign';
-import Contact from './Contact';
-import About from './About';
+import UnderConstruction from './Pages/UnderConstruction'
+import Home from './Pages/Home';
+import UXUIWork from './Pages/UXUIWork';
+import ArtAndDesign from './Pages/ArtAndDesign';
+import Contact from './Pages/Contact';
+import About from './Pages/About';
 
 function App() {
   return (

@@ -1,8 +1,7 @@
 .page-body{
     max-width: 60rem;
-    min-width: 40rem;
+    margin:0 auto;
     padding: 0rem 4rem;
-    margin: 0 auto;
 }
 
 .home-header{

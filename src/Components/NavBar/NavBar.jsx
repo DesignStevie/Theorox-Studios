@@ -25,7 +25,7 @@ function NavBar() {
 
   return (
     <div className='sidenav-container'>
-      {windowSize.innerWidth <= 700 ? 
+      {windowSize.innerWidth < 600 ? 
       <>
       <div className='sidenav-mobile'>
         <NavLink to='/home' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
