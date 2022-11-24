@@ -3,7 +3,7 @@ import "./Footer.css"
 
 function Footer() {
   return (
-    <footer>
+    <div className='footer'>
         <div className='footer-container'>
             <div className='footer-logo'>
                 <svg width="179" height="214" viewBox="0 0 179 214" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,16 +34,16 @@ function Footer() {
                 <div className='footer-email'>
                     <h4>Contact</h4>
                     <p>stevenodendaal98@gmail.com</p>
-                </div> 
+                </div>
                 <div className='footer-socials'>
                     <h4>Socials</h4>
-                </div>       
+                </div>
             </div>
         </div>
         <div className='footer-madeby'>
             <p>Proudly made by me :)</p>
         </div>
-    </footer>
+    </div>
   )
 }
 

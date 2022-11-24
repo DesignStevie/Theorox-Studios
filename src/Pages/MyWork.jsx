@@ -1,12 +1,16 @@
 import React from 'react'
 import NavBar from '../Components/NavBar/NavBar'
+import './MyWork.css'
 
-function UXUIWork() {
+function MyWork() {
   return (
     <>
-    <NavBar />
+      <NavBar />
     </>
+
+
+
   )
 }
 
-export default UXUIWork
+export default MyWork
