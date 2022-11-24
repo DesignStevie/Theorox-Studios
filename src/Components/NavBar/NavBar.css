@@ -11,6 +11,7 @@
 
 .sidenav-item-container{
     max-width: 60rem;
+    min-width: none;
     height: inherit;
     margin: 0 auto;
     display: flex;
@@ -34,6 +35,10 @@
 
 .menu-selected .sidenav-item .sidenav-svg {
     fill: #fff;
+}
+
+.mobile-menu-container{
+    display: none;
 }
 
 .sidenav-mobile{
@@ -61,4 +66,14 @@
     text-decoration: none;
     color: #2e2e2e;
     margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidenav-item-container{
+        display: none;
+    }
+    .mobile-menu-container{
+        height: inherit;
+        display: block;
+    }
 }
