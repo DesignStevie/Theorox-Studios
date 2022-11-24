@@ -7,7 +7,7 @@
   top:0;
   left: 0;
   right: 0;
-}
+}  
 
 .header-container, .my-work-container{
   padding: 0rem 2rem;
@@ -77,9 +77,12 @@ h2{
     width:60%;
   }
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 480px){
     .page-body{
       width: 100%;
       padding: 0 1rem;
+    }
+    .home-header-socials{
+      flex-direction: row;
     }
   }
