@@ -5,16 +5,11 @@ import projectData from '../Data/ProjectData'
 
 function Project(myProjectData) {
     const projectNameFromUrl = useParams().project
-    console.log(projectNameFromUrl)
 
     const [displayProject] = projectData.filter(projectObj => 
         {
-            console.log(projectObj.linkName)
             return ( "/" + projectNameFromUrl) === (projectObj.linkName)
         })
-    console.log(displayProject)
-
-    
   return (
     <>
     <NavBar />
