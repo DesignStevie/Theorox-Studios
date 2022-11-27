@@ -8,11 +8,11 @@ function WorkItem() {
     <div className='workitems'>
     {ProjectData.map((project, key) => {
         return(
-        <Link key={key} className='workitem-container' to={project.linkName} >
+        <Link key={key} className='workitem-container' to={"/my-work" + `${project.linkName}`} >
             <div className='work-item-background'></div>
             <div className='workitem-content'>
               <h4> {project.projectName}</h4>
-                <p> {project.decription}</p>
+                <p> {project.description}</p>
               </div>
             <img src={project.image} alt="project"/>
         </Link>
