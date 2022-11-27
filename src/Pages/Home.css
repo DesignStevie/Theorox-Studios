@@ -1,6 +1,6 @@
 .header-background{
   width: 100%;
-  min-height: 40rem ;
+  height: 100vh;
   position: absolute;
   background-image: linear-gradient(120deg,rgba( 255 255 255 / 0),rgba( 255 255 255 / 0), rgba(93 79 255 / 1));
   z-index: -1;
@@ -9,11 +9,24 @@
   right: 0;
 }  
 
-.header-container, .my-work-container{
+.my-work-container{
   padding: 0rem 2rem;
-  margin-top: 12rem !important;
+  margin-top: 4rem !important;
   max-width: 60rem;
   margin: 0 auto;
+
+}
+
+.header-container{
+  height: 100vh;
+  padding: 0rem 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-content{
+  margin: auto 0 !important;
 }
 
 h2{
@@ -21,7 +34,7 @@ h2{
 }
 .container{
   padding: 0rem 2rem;
-  margin-top: 8rem !important;
+  margin-top: 4rem !important;
   max-width: 60rem;
   margin: 0 auto;
 }
@@ -33,7 +46,7 @@ h2{
 }
 
 .header-title{
-  width: 50%;
+  width: 80%;
   margin: 3rem 0rem;
   font-size: 1.25rem;
   font-weight: 300;
@@ -42,10 +55,14 @@ h2{
 
 
 .home-header-socials{
-  margin: 1rem 0rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.social-icons{
+  display: flex;
+  gap: 0.5rem;
 }
 
 .home-header-buttons{
@@ -73,13 +90,32 @@ h2{
   }
 
 
-  .home-importanceofux-container, .home-aboutme-container{
+  .paragraph-content{
     width:60%;
   }
 
   @media only screen and (max-width: 480px){
+    .header-background{
+      height: 100vh;
+    }
+    .header-title{
+      margin: 2rem 0rem !important;
+      font-size: 1rem;
+    }
+    .header-container h1{
+      font-size: 3.5rem;
+    }
+    .home-header-socials{
+      gap:3rem;
+      flex-direction: column !important;
+      align-items: flex-start;
+    }
+    .my-work-container h2{
+      padding-left: 1rem;
+    }
     .my-work-container{
-    padding: 0 0 0 1rem;
+      margin-top: 4rem !important;
+    padding: 0;
     }
     .header-container, .container{
       padding: 0 1rem;
@@ -87,6 +123,11 @@ h2{
     .container{
       margin-top: 4rem !important;
     }
+
+    .paragraph-content{
+      width: 100%;
+    }
+    
     .page-body{
       width: 100%;
       padding: 0 0.5rem;
