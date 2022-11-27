@@ -78,9 +78,18 @@ h2{
   }
 
   @media only screen and (max-width: 480px){
+    .my-work-container{
+    padding: 0 0 0 1rem;
+    }
+    .header-container, .container{
+      padding: 0 1rem;
+    }
+    .container{
+      margin-top: 4rem !important;
+    }
     .page-body{
       width: 100%;
-      padding: 0 1rem;
+      padding: 0 0.5rem;
     }
     .home-header-socials{
       flex-direction: row;

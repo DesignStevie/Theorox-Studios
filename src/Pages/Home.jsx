@@ -49,6 +49,7 @@ function Home() {
     {/* HOME --- MY PROCESS */}
 
     <div className='my-process container'>
+    <h2>My Process</h2>
       <MyProcess />
     </div>
 

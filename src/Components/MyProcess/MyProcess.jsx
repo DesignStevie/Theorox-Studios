@@ -86,27 +86,27 @@ function MyProcess() {
     const [current, setCurrent] = useState(myInfo[0])
     const listItemsDesktop = info.map((item, index) => {
         return (
-            <> 
-            {windowSize.innerWidth > 481 ?
-                <div className={(item.active ? "process-button active" : "process-button")} onClick={() => HandleChange(index)} key={index}>
+        <> 
+        {windowSize.innerWidth > 481 ?
+            <div className={(item.active ? "process-button active" : "process-button")} onClick={() => HandleChange(index)} key={index}>
+                {item.SVG}
+            </div>
+        :
+            <div className={(item.active ? "mobile-process-button opened" : "mobile-process-button closed")} onClick={() => HandleChange(index)} key={index}>
+                <div className='mobile-process-button-header'>
                     {item.SVG}
+                    <h4>{item.title}</h4>
+                    <svg className='mobile-chevron' width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.9999 6.64984C5.88324 6.64984 5.7709 6.63317 5.6629 6.59984C5.55424 6.5665 5.45824 6.49984 5.3749 6.39984L0.849902 1.89984C0.716569 1.74984 0.649902 1.57484 0.649902 1.37484C0.649902 1.17484 0.724902 0.999838 0.874902 0.849838C1.0249 0.716505 1.1999 0.649838 1.3999 0.649838C1.5999 0.649838 1.7749 0.716505 1.9249 0.849838L5.9999 4.92484L10.0999 0.849838C10.2332 0.699838 10.3999 0.628838 10.5999 0.636838C10.7999 0.645505 10.9749 0.716505 11.1249 0.849838C11.2749 0.999838 11.3499 1.17884 11.3499 1.38684C11.3499 1.5955 11.2749 1.7665 11.1249 1.89984L6.6249 6.39984C6.54157 6.49984 6.4459 6.5665 6.3379 6.59984C6.22924 6.63317 6.11657 6.64984 5.9999 6.64984Z"/>
+                    </svg>
                 </div>
-            :
-                <div className={(item.active ? "mobile-process-button opened" : "mobile-process-button closed")} onClick={() => HandleChange(index)} key={index}>
-                    <div className='mobile-process-button-header'>
-                        {item.SVG}
-                        <h4>{item.title}</h4>
-                        <svg className='mobile-chevron' width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.9999 6.64984C5.88324 6.64984 5.7709 6.63317 5.6629 6.59984C5.55424 6.5665 5.45824 6.49984 5.3749 6.39984L0.849902 1.89984C0.716569 1.74984 0.649902 1.57484 0.649902 1.37484C0.649902 1.17484 0.724902 0.999838 0.874902 0.849838C1.0249 0.716505 1.1999 0.649838 1.3999 0.649838C1.5999 0.649838 1.7749 0.716505 1.9249 0.849838L5.9999 4.92484L10.0999 0.849838C10.2332 0.699838 10.3999 0.628838 10.5999 0.636838C10.7999 0.645505 10.9749 0.716505 11.1249 0.849838C11.2749 0.999838 11.3499 1.17884 11.3499 1.38684C11.3499 1.5955 11.2749 1.7665 11.1249 1.89984L6.6249 6.39984C6.54157 6.49984 6.4459 6.5665 6.3379 6.59984C6.22924 6.63317 6.11657 6.64984 5.9999 6.64984Z"/>
-                        </svg>
-                    </div>
-                    <div className="mobile-process-content">
-                        {RESEARCH_DESC}
-                    </div> 
-                </div>
-            }
-            </>
-        )
+                <div className={item.active ? "mobile-process-content-opened" : "mobile-process-content"}>
+                    {RESEARCH_DESC}
+                </div> 
+            </div>
+        }
+    </>
+    )
    })
 
     function HandleChange(index) {
@@ -124,7 +124,7 @@ function MyProcess() {
     }
 
   return (
-    <div className='my-process'>
+    <div className='my-process-container'>
         { //Check if on Desktop 
         windowSize.innerWidth > 481 ?
         <>

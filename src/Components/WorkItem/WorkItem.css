@@ -1,6 +1,5 @@
 .workitems{
     display: flex;
-    flex-direction: row;
     gap:1rem;
 }
 .workitem-container{
@@ -64,9 +63,14 @@
 
 @media only screen and (max-width: 481px){
     .workitems{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap:2rem;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding: 1rem 2rem 2rem 1rem;
+    }
+    .workitem-container{
+        width: 19rem;
+        flex: 0 0 auto;
     }
     .workitem-content{
         opacity: 1;

@@ -1,4 +1,4 @@
-.my-process{
+.my-process-container{
     display: flex;
     flex-direction: row;
 }
@@ -51,6 +51,7 @@
 
 
 .process-display-container{
+    width: 100%;
     padding: 1.5rem;
     margin-left: -2px;
     z-index: -1;
@@ -88,10 +89,6 @@
     fill: #5D4FFF;
 }
 
-.open .mobile-process-content{
-    display: block;
-}
-
 .mobile-process-button-header h4{
     color: #5D4FFF;
 }
@@ -104,15 +101,13 @@
     display: none;
 }
 
-.closed svg{
+.closed svg, .closed h4{
     fill: #fff;
-}
-
-.closed h4{
     color: #fff;
 }
 
 .closed .mobile-process-content{
+    opacity: 0;
     display: none;
 }
 
@@ -120,6 +115,23 @@
     padding: 0rem 1rem 1rem 1rem;
 }
 
+.mobile-process-content-opened{
+    padding: 0rem 1rem 1rem 1rem;
+    animation: openAnimation 0.5s;
+}
+
+@keyframes openAnimation {
+    from{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .mobile-chevron{
+    width: 1rem;
     margin-left: auto !important;
 }
