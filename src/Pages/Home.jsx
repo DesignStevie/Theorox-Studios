@@ -36,12 +36,7 @@ function Home() {
       <WorkItem />
     </div>
 
-    {/* HOME --- MY PROCESS */}
-
-    <div className='my-process container'>
-      <MyProcess />
-    </div>
-
+    
     {/* HOME --- IMPORTANCE OF UX */}
 
     <div className='importance-of-ux container'>
@@ -49,6 +44,12 @@ function Home() {
       <p>User Experience is everywhere, it’s not only in our apps and softwares, its every artificial interaction we have the pleasure to interact with everyday that makes our lives just that little bit easier.</p>
         <br/>
       <p>This has always been a key and fundemetnal part of designing any product that a user would interact with, without it, there is only chaos, and nothing will ever move forward or be improved upon, lives wont be made easier and we would be sitting in the stone ages still.</p>
+    </div>
+
+    {/* HOME --- MY PROCESS */}
+
+    <div className='my-process container'>
+      <MyProcess />
     </div>
 
     {/* HOME --- ABOUT ME */}

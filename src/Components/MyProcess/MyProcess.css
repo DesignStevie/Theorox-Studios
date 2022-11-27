@@ -68,3 +68,58 @@
 .process-display-container p{
     max-width:25rem;
 }
+
+.mobile-process-button{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #5D4FFF;
+    border-radius: 0.5rem;
+}
+
+.mobile-process-button-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap:1rem;
+}
+
+.opened svg{
+    fill: #5D4FFF;
+}
+
+.open .mobile-process-content{
+    display: block;
+}
+
+.mobile-process-button-header h4{
+    color: #5D4FFF;
+}
+
+.closed{
+    background-color: #5D4FFF;
+}
+
+.opened .mobile-chevron{
+    display: none;
+}
+
+.closed svg{
+    fill: #fff;
+}
+
+.closed h4{
+    color: #fff;
+}
+
+.closed .mobile-process-content{
+    display: none;
+}
+
+.mobile-process-content{
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.mobile-chevron{
+    margin-left: auto !important;
+}
