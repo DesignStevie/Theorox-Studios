@@ -3,14 +3,16 @@ import Footer from "../Components/Footer/Footer";
 import MyProcess from "../Components/MyProcess/MyProcess";
 import NavBar from "../Components/NavBar/NavBar";
 import WorkItem from "../Components/WorkItem/WorkItem";
-import MyImage from "../Images/header-image.png";
+import MyImage from "../Images/header-image-plain.png";
 import "./Home.css";
 
 function Home() {
   return (
     <>
       <NavBar />
-      <div className="header-background"></div>
+      <div className="header-background">
+        <b className="sphere fourth"></b>
+      </div>
       <div className="header-container">
         <div className="header-content">
           <h1>Steven</h1>
@@ -66,6 +68,9 @@ function Home() {
             </div>
           </div>
         </div>
+        <b className="sphere first"></b>
+        <b className="sphere second"></b>
+        <b className="sphere third"></b>
         <img className="home-face" src={MyImage} alt="face" />
       </div>
 
