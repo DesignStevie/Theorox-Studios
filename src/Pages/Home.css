@@ -31,11 +31,11 @@
 }
 
 .home-face {
-  width: 32rem;
-  height: 32rem;
+  width: calc(100vh / 2);
+  height: calc(100vh / 2);
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: calc(100vw / 2);
   z-index: -10;
 }
 
@@ -52,14 +52,40 @@
   left: 50%;
   z-index: -20;
   background: radial-gradient(ellipse at 0.25% 0.25%, #fff, #5d4fff, #3324e7);
+  animation: moveFirst 5s infinite;
+}
+
+@keyframes moveFirst {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.75rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .second {
   width: 16rem;
   height: 16rem;
   bottom: 0;
-  right: 15%;
+  left: 75vw;
   background: radial-gradient(ellipse at 0.5% 3%, #fff, #5d4fff, #3324e7);
+  animation: moveSecond 8s infinite;
+}
+
+@keyframes moveSecond {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.75rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .third {
@@ -68,29 +94,91 @@
   top: 10%;
   right: 20%;
   background: radial-gradient(ellipse at 0.1% 0.1%, #fff, #5d4fff, #3324e7);
+  animation: moveThird 8s infinite;
+}
+
+@keyframes moveThird {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .fourth {
-  width: 40rem;
-  height: 40rem;
+  width: calc(100vh / 0.85);
+  height: calc(100vh / 0.85);
   background: radial-gradient(ellipse at 0.1% 0.1%, #fff, #5d4fff, #3324e7);
   right: -20%;
   bottom: 0;
   opacity: 0.4;
+  animation: moveFourth 10s infinite;
+}
+
+@keyframes moveFourth {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header-content {
   margin: auto 0 !important;
 }
 
-h2 {
-  padding-bottom: 1rem;
+.sectionHeading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+  gap: 0.5rem;
 }
+
+.sectionHeading h4 {
+  color: #5d4fff;
+}
+
+.headerLine {
+  width: 4rem;
+  height: 2px;
+  background-color: #5d4fff;
+  border: none;
+  margin: 0;
+}
+
+.linkButton {
+  color: #5d4fff;
+  margin-left: auto;
+}
+
 .container {
   padding: 0rem 2rem;
-  margin-top: 4rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
   max-width: 60rem;
   margin: 0 auto;
+}
+
+.backgroundContainer {
+  background-color: #5d4fff;
+  padding: 4rem 0rem;
+}
+
+.backgroundContainer .about-me .sectionHeading .headerLine {
+  background-color: #fff;
+}
+
+.backgroundContainer .about-me .sectionHeading h4,
+.backgroundContainer .about-me .paragraph-content {
+  color: #fff;
 }
 
 .header-container h1 {
@@ -162,6 +250,11 @@ h2 {
     flex-direction: column !important;
     align-items: flex-start;
   }
+
+  .my-work-container .sectionHeading {
+    padding: 0rem 1rem;
+  }
+
   .my-work-container h2 {
     padding-left: 1rem;
   }
@@ -172,9 +265,6 @@ h2 {
   .header-container,
   .container {
     padding: 0 1rem;
-  }
-  .container {
-    margin-top: 4rem !important;
   }
 
   .home-face {

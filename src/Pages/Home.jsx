@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 import MyProcess from "../Components/MyProcess/MyProcess";
 import NavBar from "../Components/NavBar/NavBar";
@@ -77,14 +78,31 @@ function Home() {
       {/* HOME --- MY WORK */}
 
       <div className="my-work-container">
-        <h2>My Work</h2>
+        <div className="sectionHeading">
+          <hr className="headerLine" />
+          <h4>My Work</h4>
+          <Link className="linkButton">View All</Link>
+        </div>
         <WorkItem />
+      </div>
+
+      {/* HOME --- MY PROCESS */}
+
+      <div className="my-process container">
+        <div className="sectionHeading">
+          <hr className="headerLine" />
+          <h4>Solving UX Challenges</h4>
+        </div>
+        <MyProcess />
       </div>
 
       {/* HOME --- IMPORTANCE OF UX */}
 
       <div className="importance-of-ux container">
-        <h2>Importance of UX</h2>
+        <div className="sectionHeading">
+          <hr className="headerLine" />
+          <h4>Importance of UX</h4>
+        </div>
         <div className="paragraph-content">
           <p>
             User Experience is everywhere, it’s not only in our apps and
@@ -102,39 +120,37 @@ function Home() {
         </div>
       </div>
 
-      {/* HOME --- MY PROCESS */}
-
-      <div className="my-process container">
-        <h2>My Process</h2>
-        <MyProcess />
-      </div>
-
       {/* HOME --- ABOUT ME */}
-
-      <div className="about-me container">
-        <h2>About Me</h2>
-        <div className="paragraph-content">
-          <p>
-            I grew up having a passion and desire to create, build, and make
-            everything around me look and feel good, I knew being in this field
-            would give me the best of both worlds to make things not just look
-            great but also feel good to the users.
-          </p>
-          <br />
-          <p>
-            I studied to get my Bachelors in Design, majored in Interface Design
-            and minored in Computer Science as I also have a deep passion for
-            front end development as well.
-          </p>
-          <br />
-          <q>
-            If I can design it to look and feel good, why not build it as well?
-          </q>
-          <br />
-          <p>
-            I now continue to persue my career in UX/UI and continue learning
-            and developing myself further each day.
-          </p>
+      <div className="backgroundContainer">
+        <div className="about-me container">
+          <div className="sectionHeading">
+            <hr className="headerLine" />
+            <h4>About Me</h4>
+          </div>
+          <div className="paragraph-content">
+            <p>
+              I grew up having a passion and desire to create, build, and make
+              everything around me look and feel good, I knew being in this
+              field would give me the best of both worlds to make things not
+              just look great but also feel good to the users.
+            </p>
+            <br />
+            <p>
+              I studied to get my Bachelors in Design, majored in Interface
+              Design and minored in Computer Science as I also have a deep
+              passion for front end development as well.
+            </p>
+            <br />
+            <p>
+              If I can design it to look and feel good, why not build it as
+              well?
+            </p>
+            <br />
+            <p>
+              I now continue to persue my career in UX/UI and continue learning
+              and developing myself further each day.
+            </p>
+          </div>
         </div>
       </div>
 
