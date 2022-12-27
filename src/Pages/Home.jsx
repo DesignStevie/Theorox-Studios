@@ -81,7 +81,7 @@ function Home() {
         <div className="sectionHeading">
           <hr className="headerLine" />
           <h4>My Work</h4>
-          <Link className="linkButton">View All</Link>
+          <Link className="linkButton" to="/my-work">View All</Link>
         </div>
         <WorkItem />
       </div>

@@ -16,7 +16,7 @@ function WorkItem() {
             <div className="work-item-background"></div>
             <div className="workitem-content">
               <h4> {project.projectName}</h4>
-              <p> {project.description}</p>
+              <p> {project.short_description}</p>
             </div>
             <img className="project-image" src={project.image} alt="project" />
           </Link>
