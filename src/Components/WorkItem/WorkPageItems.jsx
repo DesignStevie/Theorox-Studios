@@ -1,7 +1,6 @@
 import React from "react";
 import "./WorkPageItems.css";
 import ProjectData from "../../Data/ProjectData";
-import { Link } from "react-router-dom";
 
 function WorkPageItems() {
   return (
