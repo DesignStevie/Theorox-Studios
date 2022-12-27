@@ -5,7 +5,7 @@ import "./MyWork.css";
 
 function MyWork() {
   return (
-    <div className="mywork-main">
+    <div className="page-container">
       <NavBar />
       <div className="container">
         <h1 className="page-heading">My Work.</h1>

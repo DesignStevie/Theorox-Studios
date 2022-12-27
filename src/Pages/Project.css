@@ -1,0 +1,89 @@
+.project-header {
+  background-color: #5d4fff;
+  padding: 2rem 0rem;
+}
+
+.project-header .page-heading {
+  color: #fff;
+}
+.project-line {
+  width: 4rem;
+  margin: 2rem 0rem;
+  height: 2px;
+  border: none;
+  background-color: #fff;
+}
+
+.subHeading {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.process-container {
+  display: flex;
+  gap: 1rem;
+}
+.process-container > * {
+  flex: 1;
+}
+
+.process-image {
+  width: 100%;
+  background-color: #ccc;
+}
+.projectProblem {
+  color: #fff;
+}
+
+.projectProblemText {
+  color: #fff;
+  width: 50%;
+  font-size: 0.875rem;
+}
+
+.process-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: -6.8rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.processName {
+  color: #5d4fff;
+}
+
+.project-footer {
+  padding: 2rem 0rem;
+  background-color: #5d4fff;
+}
+.projectSolution {
+  color: #fff;
+}
+.process-text {
+  white-space: pre-line;
+  vertical-align: bottom;
+  font-size: 0.875rem;
+}
+.process-textSolution {
+  color: #fff;
+  font-size: 0.875rem;
+}
+.projectImages {
+  display: flex;
+}
+
+.projectImage img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  .projectImages {
+    flex-direction: column;
+  }
+  .process-container{
+    flex-direction: column;
+  }
+}
