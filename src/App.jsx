@@ -7,10 +7,12 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Project from "./Pages/Project";
 import projectData from "./Data/ProjectData";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<UnderConstruction />} />
         <Route path="/home" element={<Home />} />
