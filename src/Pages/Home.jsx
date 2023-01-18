@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer";
-import MyProcess from "../Components/MyProcess/MyProcess";
 import NavBar from "../Components/NavBar/NavBar";
 import WorkItem from "../Components/WorkItem/WorkItem";
 import MyImage from "../Images/header-image-plain.png";
@@ -77,55 +77,23 @@ function Home() {
 
       {/* HOME --- MY WORK */}
 
-      <div className="my-work-container">
+      <div className="my-work container">
         <div className="sectionHeading">
-          <hr className="headerLine" />
           <h4>My Work</h4>
-          <Link className="linkButton" to="/my-work">View All</Link>
+          <hr className="headerLine" />
+          {/* <Link className="linkButton" to="/my-work">
+            View All
+          </Link> */}
         </div>
         <WorkItem />
       </div>
 
-      {/* HOME --- MY PROCESS */}
-
-      <div className="my-process container">
-        <div className="sectionHeading">
-          <hr className="headerLine" />
-          <h4>Solving UX Challenges</h4>
-        </div>
-        <MyProcess />
-      </div>
-
-      {/* HOME --- IMPORTANCE OF UX */}
-
-      <div className="importance-of-ux container">
-        <div className="sectionHeading">
-          <hr className="headerLine" />
-          <h4>Importance of UX</h4>
-        </div>
-        <div className="paragraph-content">
-          <p>
-            User Experience is everywhere, it’s not only in our apps and
-            softwares, its every artificial interaction we have the pleasure to
-            interact with everyday that makes our lives just that little bit
-            easier.
-          </p>
-          <br />
-          <p>
-            This has always been a key and fundemetnal part of designing any
-            product that a user would interact with, without it, there is only
-            chaos, and nothing will ever move forward or be improved upon, lives
-            wont be made easier and we would be sitting in the stone ages still.
-          </p>
-        </div>
-      </div>
-
       {/* HOME --- ABOUT ME */}
-      <div className="backgroundContainer">
-        <div className="about-me container">
+      <div className="colouredContainer">
+        <div className="about-me colouredInnerContainer">
           <div className="sectionHeading">
+            <h4>This is Me!</h4>
             <hr className="headerLine" />
-            <h4>About Me</h4>
           </div>
           <div className="paragraph-content">
             <p>
@@ -151,6 +119,21 @@ function Home() {
               and developing myself further each day.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* HOME --- MY WORK */}
+
+      <div className="container lastContainer">
+        <div className="sectionHeading">
+          <h4>Get in Touch</h4>
+          <hr className="headerLine" />
+        </div>
+        <div className="contactContainer">
+          <div className="halfForm">
+            <Contact />
+          </div>
+          <div className="contactImage halfForm"></div>
         </div>
       </div>
 
