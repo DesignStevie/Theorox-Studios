@@ -12,7 +12,7 @@ function Home() {
     <>
       <NavBar />
       <div className="header-background">
-        <b className="sphere fourth"></b>
+        <img className="home-face" src={MyImage} alt="face" />
       </div>
       <div className="header-container">
         <div className="header-content">
@@ -72,7 +72,6 @@ function Home() {
         <b className="sphere first"></b>
         <b className="sphere second"></b>
         <b className="sphere third"></b>
-        <img className="home-face" src={MyImage} alt="face" />
       </div>
 
       {/* HOME --- MY WORK */}
