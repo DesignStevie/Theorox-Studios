@@ -80,7 +80,12 @@
   height: 5rem;
   top: 10%;
   right: 20%;
-  background: radial-gradient(ellipse at 0.1% 0.1%, #fff, #5d4fff, #3324e7);
+  background: radial-gradient(
+    ellipse at 0.1% 0.1%,
+    #fff,
+    hsl(245, 100%, 65%),
+    #3324e7
+  );
   animation: moveThird 8s infinite;
 }
 

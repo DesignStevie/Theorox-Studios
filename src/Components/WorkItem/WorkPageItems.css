@@ -9,16 +9,35 @@
 
 .workitem-image {
   border-radius: 0.5rem;
-  width: 100%;
-  height: 100%;
+  max-width: 30rem;
   object-fit: cover;
 }
 
 .workItem-Name {
   color: #5d4fff;
-  margin-bottom: 1rem;
 }
 
 .workItem-desc {
+  white-space: pre-line;
+  vertical-align: bottom;
   color: #2e2e2e;
 }
+
+.workitem-nameContainer{
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .myworkitem-container{
+    flex-direction: column;
+  }
+
+  .workitem-image{
+    width: 100%;
+  }
+}
+
