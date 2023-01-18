@@ -140,6 +140,7 @@
   color: #5d4fff;
   margin-left: auto;
 }
+
 /* Standard Containers */
 .container {
   padding: 0rem 2rem;
@@ -271,17 +272,17 @@
     align-items: flex-start;
   }
 
-  .my-work-container .sectionHeading {
+  .my-work .sectionHeading {
     padding: 0rem 1rem;
   }
 
   .my-work-container h2 {
     padding-left: 1rem;
   }
-  .my-work-container {
-    margin-top: 4rem !important;
-    padding: 0;
+  .my-work{
+  padding: 0 !important;
   }
+
   .header-container,
   .container {
     padding: 0 1rem;
@@ -295,22 +296,24 @@
   }
   .first {
     bottom: 35%;
+    width: 6rem;
+    height: 6rem;
     top: auto;
-    left: 60%;
+    left: 70%;
   }
   .second {
     left: -15%;
-    bottom: 5%;
-    width: 10rem;
-    height: 10rem;
+    bottom: 1rem;
+    width: 8rem;
+    height: 8rem;
     z-index: -30;
   }
   .third {
     bottom: 0;
     right: -6rem;
     top: -4rem;
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 15rem;
+    height: 15rem;
   }
   .page-body {
     width: 100%;

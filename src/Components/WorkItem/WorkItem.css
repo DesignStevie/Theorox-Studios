@@ -25,20 +25,20 @@
 .workitem-content {
   position: absolute;
   opacity: 0;
-  bottom: 0;
+  bottom: 0.5rem;
   padding: 1rem;
-  color: #fff;
-  isolation: isolate;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: #fff;
   transform: translateY(0.5rem);
   transition: opacity 0.2s, transform 0.5s;
 }
 .workitem-container h4 {
   color: #5d4fff;
   font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 .workitem-content p {
   color: #2e2e2e;
-  margin-top: 0.5rem;
   font-weight: 300;
 }
 
@@ -55,12 +55,7 @@
 }
 
 .workitem-container:hover > .workitem-content {
-  transform: translateY(-0.5rem);
   opacity: 1;
-}
-.workitem-container:hover > .work-item-background {
-  opacity: 1;
-  height: 8rem;
 }
 
 .workitem-container:hover {
@@ -76,12 +71,11 @@
     gap: 1rem;
   }
   .workitem-container {
-    width: 19rem;
+    width: 14rem;
     flex: 0 0 auto;
   }
   .workitem-content {
     opacity: 1;
-    padding-bottom: 2rem;
   }
 
   .work-item-background {
