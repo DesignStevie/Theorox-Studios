@@ -1,5 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
@@ -8,6 +9,10 @@ import MyImage from "../Images/header-image-plain.png";
 import "./Home.css";
 
 function Home() {
+  const contactSection = useRef(null)
+
+   const executeScroll = () => contactSection.current.scrollIntoView()
+
   return (
     <>
       <NavBar />
@@ -22,7 +27,7 @@ function Home() {
             A <b>UX/UI Designer</b> with a hint of <b>Frontend Development</b>.
           </h4>
           <div className="home-header-socials">
-            <button className="roundbutton primary-button">Contact Me</button>
+            <button className="roundbutton primary-button" onClick={executeScroll}>Contact Me</button>
             <div className="social-icons">
               <svg
                 width="24"
@@ -85,6 +90,11 @@ function Home() {
           </Link> */}
         </div>
         <WorkItem />
+        <div className="workItemButton">
+          <Link to="/my-work">
+            <button className="roundbutton secondary-button">View All</button>
+          </Link>
+        </div>
       </div>
 
       {/* HOME --- ABOUT ME */}
@@ -123,7 +133,7 @@ function Home() {
 
       {/* HOME --- MY WORK */}
 
-      <div className="container lastContainer">
+      <div ref={contactSection} className="container lastContainer">
         <div className="sectionHeading">
           <h4>Get in Touch</h4>
           <hr className="headerLine" />

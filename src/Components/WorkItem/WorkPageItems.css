@@ -1,12 +1,18 @@
 .myworkitem-container {
+  padding-bottom: 6rem;
   max-width: 1280px;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .flex-container > * {
   flex: 1;
 }
-
+.workitem-text-container{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  text-decoration: none;
+}
 .workitem-image {
   border-radius: 0.5rem;
   max-width: 30rem;

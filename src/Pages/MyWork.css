@@ -3,5 +3,7 @@
 }
 
 .page-heading {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
   font-size: 4rem;
 }

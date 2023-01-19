@@ -94,6 +94,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .page-heading{
+    font-size: 3rem;
+  }
   .projectHeaderInner{
     padding: 0 1rem;
   }
