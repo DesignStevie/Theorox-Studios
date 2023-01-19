@@ -31,10 +31,7 @@ function NavBar() {
             Home
           </NavLink>
           <NavLink to='/my-work' className={({isActive }) => isActive ? "nav-item-mobile selected" : "nav-item-mobile"}>
-            My Work
-          </NavLink>
-          <NavLink to='/extra' className={({isActive }) => isActive ? "nav-item-mobile selected" : "nav-item-mobile"}>
-            Extras
+            Work
           </NavLink>
           <NavLink to='/about' className={({isActive }) => isActive ? "nav-item-mobile selected" : "nav-item-mobile"}>
             About
@@ -50,10 +47,7 @@ function NavBar() {
          Ts.
         </NavLink>
         <NavLink to='/my-work' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
-          My Work
-        </NavLink>
-        <NavLink to='/extra' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
-          Extras
+          Work
         </NavLink>
         <NavLink to='/about' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
           About

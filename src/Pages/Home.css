@@ -144,7 +144,8 @@
 /* Standard Containers */
 .container {
   padding: 0rem 2rem;
-  margin-top: 7.5rem !important;
+  margin-top: 3.25rem !important;
+  margin-bottom: 3.25rem !important;
   max-width: 60rem;
   margin: 0 auto;
 }

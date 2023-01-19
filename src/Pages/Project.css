@@ -1,6 +1,16 @@
 .project-header {
-  background-color: #5d4fff;
-  padding: 2rem 0rem;
+  background: rgb(189, 79, 255);
+  background: linear-gradient(
+    125deg,
+    rgba(189, 79, 255, 1) 0%,
+    rgba(93, 79, 255, 1) 100%
+  );
+  padding: 8rem 0rem;
+}
+
+.projectHeaderInner {
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 .project-header .page-heading {
@@ -35,17 +45,15 @@
   color: #fff;
 }
 
-.projectProblemText {
+.projectIntoductionText {
   color: #fff;
-  width: 50%;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
 }
 
 .process-header {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
-  margin-left: -6.8rem;
   padding-top: 4rem;
   padding-bottom: 1rem;
 }
@@ -56,7 +64,12 @@
 
 .project-footer {
   padding: 2rem 0rem;
-  background-color: #5d4fff;
+  background: rgb(189, 79, 255);
+  background: linear-gradient(
+    125deg,
+    rgba(189, 79, 255, 1) 0%,
+    rgba(93, 79, 255, 1) 100%
+  );
 }
 .projectSolution {
   color: #fff;
@@ -67,6 +80,7 @@
   font-size: 0.875rem;
 }
 .process-textSolution {
+  white-space: pre-line;
   color: #fff;
   font-size: 0.875rem;
 }
@@ -80,10 +94,13 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .projectHeaderInner{
+    padding: 0 1rem;
+  }
   .projectImages {
     flex-direction: column;
   }
-  .process-container{
+  .process-container {
     flex-direction: column;
   }
 }

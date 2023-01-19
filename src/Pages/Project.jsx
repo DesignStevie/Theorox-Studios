@@ -16,12 +16,12 @@ function Project(myProjectData) {
       <NavBar />
       <div className="page-container">
         <div className="project-header">
-          <div className="container">
+          <div className="projectHeaderInner">
             {/* PROJECT --- HEADING */}
             <h1 className="page-heading">{displayProject.projectName}</h1>
             <hr className="project-line" />
-            <h3 className="projectProblem subHeading">Problem</h3>
-            <p className="projectProblemText">{displayProject.problem}</p>
+            <h3 className="projectProblem subHeading">Introduction</h3>
+            <p className="projectIntoductionText">{displayProject.problem}</p>
           </div>
         </div>
         {/* PROJECT --- UNDERSTAND */}
@@ -39,8 +39,6 @@ function Project(myProjectData) {
                 fill="#5D4FFF"
               />
             </svg>
-
-            <hr className="headerLine" />
             <h3 className="processName">Understand</h3>
           </div>
           <div className="process-container">
@@ -63,7 +61,6 @@ function Project(myProjectData) {
                 fill="#5D4FFF"
               />
             </svg>
-            <hr className="headerLine" />
             <h3 className="processName">Research</h3>
           </div>
           <div className="process-container">
@@ -86,7 +83,6 @@ function Project(myProjectData) {
                 fill="#5D4FFF"
               />
             </svg>
-            <hr className="headerLine" />
             <h3 className="processName">Ideate</h3>
           </div>
           <div className="process-container">
@@ -111,7 +107,6 @@ function Project(myProjectData) {
               />
             </svg>
 
-            <hr className="headerLine" />
             <h3 className="processName">Prototype</h3>
           </div>
           <div className="process-container">
@@ -134,7 +129,6 @@ function Project(myProjectData) {
                 fill="#5D4FFF"
               />
             </svg>
-            <hr className="headerLine" />
             <h3 className="processName">Validate</h3>
           </div>
           <div className="process-container">
