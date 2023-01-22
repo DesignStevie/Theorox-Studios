@@ -140,11 +140,13 @@ function Project(myProjectData) {
         <div className="project-footer">
           <div className="container">
             <h3 className="projectSolution subHeading">Final Solution</h3>
-            <div className="process-container">
+            <div className="finalSolutionContainer">
               <div className="process-textSolution">
                 {displayProject.finalSolution}
               </div>
-              <div className="process-image"></div>
+              <div className="process-image">
+                <img src={displayProject.finalSolutionImage} alt="Final Solution" />
+              </div>
             </div>
           </div>
         </div>

@@ -9,9 +9,19 @@ import MyImage from "../Images/header-image-plain.png";
 import "./Home.css";
 
 function Home() {
-  const contactSection = useRef(null)
+  const contactSection = useRef(null);
+  const offset = 24;
 
-   const executeScroll = () => contactSection.current.scrollIntoView()
+  //  const executeScroll = () => contactSection.current.scrollIntoView()
+  const executeScroll = () => {
+    document.body.scrollTo({
+      behavior: "smooth",
+      top:
+        contactSection.current.getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top -
+        offset,
+    });
+  };
 
   return (
     <>
@@ -27,7 +37,12 @@ function Home() {
             A <b>UX/UI Designer</b> with a hint of <b>Frontend Development</b>.
           </h4>
           <div className="home-header-socials">
-            <button className="roundbutton primary-button" onClick={executeScroll}>Contact Me</button>
+            <button
+              className="roundbutton primary-button"
+              onClick={executeScroll}
+            >
+              Contact Me
+            </button>
             <div className="social-icons">
               <svg
                 width="24"
@@ -132,8 +147,8 @@ function Home() {
       </div>
 
       {/* HOME --- MY WORK */}
-
-      <div ref={contactSection} className="container lastContainer">
+      <div ref={contactSection}></div>
+      <div className="container lastContainer">
         <div className="sectionHeading">
           <h4>Get in Touch</h4>
           <hr className="headerLine" />

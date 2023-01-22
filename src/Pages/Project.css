@@ -36,10 +36,17 @@
 .process-container > * {
   flex: 1;
 }
-
-.process-image {
+.finalSolutionContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.finalSolutionContainer .process-textSolution{
+  font-size: 18px;
+}
+.finalSolutionContainer .process-image img {
   width: 100%;
-  background-color: #ccc;
+  height: 100%;
 }
 .projectProblem {
   color: #fff;
