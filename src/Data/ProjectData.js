@@ -72,6 +72,7 @@ const projectData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
     finalSolution:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
+    finalSolutionImage: require("../Images/2FAFinal.png"),
   },
 ];
 

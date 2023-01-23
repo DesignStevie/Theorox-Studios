@@ -56,20 +56,29 @@
 
 .workitem-container:hover > .workitem-content {
   opacity: 1;
+  cursor: pointer;
 }
 
 .workitem-container:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 481px) {
   .workitems {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
     flex-wrap: nowrap;
     overflow-y: hidden;
     overflow-x: auto;
     padding: 1rem 2rem 4rem 1rem;
     gap: 1rem;
   }
+
+  .workitems::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
   .workitem-container {
     width: 14rem;
     flex: 0 0 auto;

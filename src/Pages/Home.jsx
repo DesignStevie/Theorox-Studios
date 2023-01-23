@@ -12,14 +12,10 @@ function Home() {
   const contactSection = useRef(null);
   const offset = 24;
 
-  //  const executeScroll = () => contactSection.current.scrollIntoView()
   const executeScroll = () => {
     document.body.scrollTo({
       behavior: "smooth",
-      top:
-        contactSection.current.getBoundingClientRect().top -
-        document.body.getBoundingClientRect().top -
-        offset,
+      top: contactSection.current.offsetTop - offset,
     });
   };
 
