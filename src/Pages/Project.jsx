@@ -21,7 +21,21 @@ function Project(myProjectData) {
             <h1 className="page-heading">{displayProject.projectName}</h1>
             <hr className="project-line" />
             <h3 className="projectProblem subHeading">Introduction</h3>
-            <p className="projectIntoductionText">{displayProject.problem}</p>
+            <p className="projectIntroductionText">{displayProject.problem}</p>
+            <div className="projectDetails">
+              <div className="details">
+                <h4>COMPANY</h4>
+                <p>{displayProject.company}</p>
+              </div>
+              <div className="details">
+              <h4>SQUAD</h4>
+              <p>{displayProject.squad}</p>
+              </div>
+              <div className="details">
+              <h4>TIMEFRAME</h4>
+              <p>{displayProject.timeframe}</p>
+              </div>
+            </div>
           </div>
         </div>
         {/* PROJECT --- UNDERSTAND */}
@@ -152,10 +166,10 @@ function Project(myProjectData) {
         </div>
         <div className="projectImages">
             <div className="projectImage">
-              <img src={displayProject.image} alt="project" />
+              <img src={displayProject.finalSolutionImageTwo} alt="project" />
             </div>
             <div className="projectImage">
-              <img src={displayProject.image} alt="project" />
+              <img src={displayProject.finalSolutionImageThree} alt="project" />
             </div>
           </div>
       </div>

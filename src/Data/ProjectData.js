@@ -3,6 +3,9 @@ const projectData = [
     id: 0,
     projectName: "Onboarding Wizard",
     linkName: "/project01",
+    company: "Gallagher New Zealand",
+    squad: "1 Product Manager, 4 Engineers, 2 Testers",
+    timeframe: " Oct 2022 - Feb 2023",
     short_description:
       "Creating a cloud security management solution for cardholder and building control.",
     long_description:
@@ -23,11 +26,16 @@ const projectData = [
     finalSolution:
       "After receiving all the results we were happy to move this over into our next planned sprint where we can build this feature in different parts for MVP (minimal viable product) and get our customers to begin using it with their own real world data. \n \n We still look to continue refining and making the experience even better as we receive more feedback and suggestions from our customers. \n \n We already began investigating a customised Wizard experience tailored to the users preference and what steps they use and don't use to make their workflows even faster for onboarding Cardholders/Users.",
     finalSolutionImage: require("../Images/OnboardingFinalsolution.png"),
+    finalSolutionImageTwo: require("../Images/OnboardingCredential.png"),
+    finalSolutionImageThree: require("../Images/OnboardingSummary.png")
   },
   {
     id: 1,
     projectName: "Credential Request",
     linkName: "/project02",
+    company: "Gallagher New Zealand",
+    squad: "1 Product Manager, 4  Engineers, 2 Testers",
+    timeframe: " Oct 2022 - Mar 2023",
     short_description:
       "Creating a new self service credential and access management cloud solution.",
     long_description:
@@ -53,6 +61,9 @@ const projectData = [
     id: 2,
     projectName: "Two Factor Authenticator",
     linkName: "/project03",
+    company: "Gallagher New Zealand",
+    squad: "1 Product Manager, 3 Engineers, 2 Testers",
+    timeframe: " Jan 2022 - Apr 2022",
     short_description:
       "Revamping and adding a 2FA Solution to a pre-existing mobile credential app for IOS & Android.",
     long_description:
