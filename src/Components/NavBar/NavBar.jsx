@@ -44,7 +44,7 @@ function NavBar() {
 
       <div className='sidenav-item-container'>
         <NavLink to='/home' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
-         Ts.
+         SO.
         </NavLink>
         <NavLink to='/my-work' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
           Work

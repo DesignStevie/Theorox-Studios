@@ -95,6 +95,9 @@
   color: #fff;
   font-size: 0.875rem;
 }
+.moreProjectsContainer{
+  padding-bottom: 4rem;
+}
 .projectImages {
   display: flex;
 }

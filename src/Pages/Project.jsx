@@ -1,6 +1,6 @@
 import { React } from "react";
 import "./Project.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import projectData from "../Data/ProjectData";
@@ -28,12 +28,12 @@ function Project(myProjectData) {
                 <p>{displayProject.company}</p>
               </div>
               <div className="details">
-              <h4>SQUAD</h4>
-              <p>{displayProject.squad}</p>
+                <h4>SQUAD</h4>
+                <p>{displayProject.squad}</p>
               </div>
               <div className="details">
-              <h4>TIMEFRAME</h4>
-              <p>{displayProject.timeframe}</p>
+                <h4>TIMEFRAME</h4>
+                <p>{displayProject.timeframe}</p>
               </div>
             </div>
           </div>
@@ -159,19 +159,46 @@ function Project(myProjectData) {
                 {displayProject.finalSolution}
               </div>
               <div className="process-image">
-                <img src={displayProject.finalSolutionImage} alt="Final Solution" />
+                <img
+                  src={displayProject.finalSolutionImage}
+                  alt="Final Solution"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div className="projectImages">
-            <div className="projectImage">
-              <img src={displayProject.finalSolutionImageTwo} alt="project" />
-            </div>
-            <div className="projectImage">
-              <img src={displayProject.finalSolutionImageThree} alt="project" />
-            </div>
+        <div className="containerPlain">
+          <div className="moreProjectsContainer">
+            <h1 className="pageHeading">More Projects.</h1>
           </div>
+          <div className="workitems">
+            {projectData
+              .filter((projectData) => projectData.id !== displayProject.id)
+              .map((project, key) => {
+                return (
+                  <Link
+                    key={key}
+                    className="workitem-container"
+                    to={"/my-work" + project.linkName}
+                  >
+                    <img
+                      className="project-image"
+                      src={project.image}
+                      alt="project"
+                    />
+                    <div className="workitem-content">
+                      <h3> {project.projectName}</h3>
+                      <h4>UX/UI</h4>
+                      <p> {project.short_description}</p>
+                      <button className="roundbutton secondary-button">
+                        View Project
+                      </button>
+                    </div>
+                  </Link>
+                );
+              })}
+          </div>
+        </div>
       </div>
       <Footer />
     </>

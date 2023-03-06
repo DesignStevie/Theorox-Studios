@@ -20,7 +20,7 @@
 
 .workitem-content {
   bottom: 0.5rem;
-  padding: 1rem;
+  padding: 1rem 0rem;
   border-radius: 0 0 0.5rem 0.5rem;
   background-color: #fff;
   transform: translateY(0.5rem);

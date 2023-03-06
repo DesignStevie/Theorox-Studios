@@ -42,7 +42,9 @@ h1{
 p {
   font-size: 0.875rem;
 }
-
+b{
+  font-weight: 600;
+}
 .containerPlain{
   padding: 4rem 2rem;
   max-width: 60rem;

@@ -103,7 +103,7 @@ function Home() {
         <WorkItem />
         <div className="workItemButton">
           <Link to="/my-work">
-            <button className="roundbutton secondary-button">View All</button>
+            <button className="roundbutton secondary-button viewAllButton">View All</button>
           </Link>
         </div>
       </div>

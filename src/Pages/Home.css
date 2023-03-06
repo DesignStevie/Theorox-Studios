@@ -281,7 +281,11 @@
     padding: 0 1rem;
   }
 .workItemButton{
-  padding: 1rem;
+  padding: 3rem 1rem;
+  display: block;
+}
+.viewAllButton{
+  width: 100%;
 }
   .home-face {
     display: none;

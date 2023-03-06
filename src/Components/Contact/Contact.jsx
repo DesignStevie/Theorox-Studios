@@ -16,11 +16,11 @@ function Contact() {
       <input type="email" placeholder="Email" />
       <textarea placeholder="Type your message..." />
 
-      {/* Live Site Key:6Lejy1YkAAAAAPGmpjkgENsWSk1t6MXVQM1mLFm_ 
+      {/* Live Site Key:6Ldag9YkAAAAADnI0JXGavhoYDsDlbSErwQguNtL 
       Localhost Site Key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI */}
 
       <ReCAPTCHA
-        sitekey="6Lejy1YkAAAAAPGmpjkgENsWSk1t6MXVQM1mLFm_"
+        sitekey="6Ldag9YkAAAAADnI0JXGavhoYDsDlbSErwQguNtL"
         onChange={handleOnChange}
       />
 
