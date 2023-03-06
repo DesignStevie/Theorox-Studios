@@ -31,3 +31,18 @@ textarea {
   border-radius: 0.5rem;
   padding: 1rem;
 }
+
+.disabled-button {
+  cursor: auto !important;
+  background-color: #efefef;
+  color: #ccc;
+}
+
+@media only screen and (max-width: 480px) {
+  .sendButtonContainer {
+    display: block;
+  }
+  .sendButton {
+    width: 100% !important;
+  }
+}
