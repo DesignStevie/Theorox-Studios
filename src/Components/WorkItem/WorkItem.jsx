@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function WorkItem() {
   return (
     <div className="workitems">
-      {ProjectData.map((project, key) => {
+      {ProjectData.slice(0,2).map((project, key) => {
         return (
           <Link
             key={key}
@@ -15,8 +15,10 @@ function WorkItem() {
           >
             <img className="project-image" src={project.image} alt="project" />
             <div className="workitem-content">
-              <h4> {project.projectName}</h4>
+              <h3> {project.projectName}</h3>
+              <h4>UX/UI</h4>
               <p> {project.short_description}</p>
+              <button className="roundbutton secondary-button">View Project</button>
             </div>
           </Link>
         );

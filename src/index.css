@@ -17,14 +17,56 @@ h2,
 h3,
 h4,
 p,
-a {
+a,
+button {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Golos Text', sans-serif;
+}
+h4{
+  font-size: 1rem;
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h2{
+ font-size: 2rem;
+ font-weight: 600;
+}
+
+h1{
+  font-size: 4rem;
 }
 
 p {
   font-size: 0.875rem;
+}
+
+.containerPlain{
+  padding: 4rem 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.colouredBackground{
+  margin: 0 auto;
+  background: rgb(189, 79, 255);
+  background: linear-gradient(
+    125deg,
+    rgba(189, 79, 255, 1) 0%,
+    rgba(93, 79, 255, 1) 100%
+  );
+
+}
+
+.page-container {
+  margin-top: 3.5rem;
+}
+
+.pageHeadingWhite{
+  font-size: 4rem;
+  color: #fff;
 }
 
 code {

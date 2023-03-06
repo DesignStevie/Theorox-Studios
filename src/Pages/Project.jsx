@@ -15,10 +15,10 @@ function Project(myProjectData) {
     <>
       <NavBar />
       <div className="page-container">
-        <div className="project-header">
-          <div className="projectHeaderInner">
+        <div className="colouredBackground">
+          <div className="containerPlain">
             {/* PROJECT --- HEADING */}
-            <h1 className="page-heading">{displayProject.projectName}</h1>
+            <h1 className="pageHeadingWhite">{displayProject.projectName}</h1>
             <hr className="project-line" />
             <h3 className="projectProblem subHeading">Introduction</h3>
             <p className="projectIntroductionText">{displayProject.problem}</p>
@@ -39,7 +39,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {/* PROJECT --- UNDERSTAND */}
-        <div className="container">
+        <div className="containerPlain">
           <div className="process-header">
             <svg
               width="28"
@@ -61,7 +61,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {/* PROJECT --- RESEARCH */}
-        <div className="container">
+        <div className="containerPlain">
           <div className="process-header">
             <svg
               width="24"
@@ -83,7 +83,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {/* PROJECT --- IDEATE */}
-        <div className="container">
+        <div className="containerPlain">
           <div className="process-header">
             <svg
               width="23"
@@ -106,7 +106,7 @@ function Project(myProjectData) {
         </div>
 
         {/* PROJECT --- PROTOTYPE */}
-        <div className="container">
+        <div className="containerPlain">
           <div className="process-header">
             <svg
               width="26"
@@ -129,7 +129,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {/* PROJECT --- VALIDATE */}
-        <div className="container">
+        <div className="containerPlain">
           <div className="process-header">
             <svg
               width="28"
@@ -151,8 +151,8 @@ function Project(myProjectData) {
           </div>
         </div>
         {/* PROJECT --- FINAL SOLUTION */}
-        <div className="project-footer">
-          <div className="container">
+        <div className="colouredBackground">
+          <div className="containerPlain">
             <h3 className="projectSolution subHeading">Final Solution</h3>
             <div className="finalSolutionContainer">
               <div className="process-textSolution">

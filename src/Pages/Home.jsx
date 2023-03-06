@@ -92,9 +92,9 @@ function Home() {
 
       {/* HOME --- MY WORK */}
 
-      <div className="my-work container">
+      <div className="my-work containerPlain">
         <div className="sectionHeading">
-          <h4>My Work</h4>
+          <h2>Featured Work</h2>
           <hr className="headerLine" />
           {/* <Link className="linkButton" to="/my-work">
             View All
@@ -109,10 +109,10 @@ function Home() {
       </div>
 
       {/* HOME --- ABOUT ME */}
-      <div className="colouredContainer">
-        <div className="about-me colouredInnerContainer">
+      <div className="colouredBackground">
+        <div className="about-me containerPlain">
           <div className="sectionHeading">
-            <h4>This is Me!</h4>
+            <h2>This is Me!</h2>
             <hr className="headerLine" />
           </div>
           <div className="paragraph-content">
@@ -144,9 +144,9 @@ function Home() {
 
       {/* HOME --- MY WORK */}
       <div ref={contactSection}></div>
-      <div className="container lastContainer">
+      <div className="containerPlain">
         <div className="sectionHeading">
-          <h4>Get in Touch</h4>
+          <h2>Get in Touch</h2>
           <hr className="headerLine" />
         </div>
         <div className="contactContainer">

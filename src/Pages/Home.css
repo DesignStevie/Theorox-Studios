@@ -13,7 +13,7 @@
   -webkit-backdrop-filter: blur(5px);
 }
 .header-content h1 {
-  font-weight: 800;
+  font-weight: 600;
 }
 .header-container {
   height: 100vh;
@@ -55,7 +55,7 @@
   top: 25%;
   left: 50%;
   z-index: -20;
-  animation: moveFirst 5s infinite;
+  animation: moveFirst 3s infinite;
 }
 
 @keyframes moveFirst {
@@ -76,7 +76,7 @@
   bottom: 0;
   z-index: -21;
   left: 40vw;
-  animation: moveSecond 8s infinite;
+  animation: moveSecond 4s infinite;
 }
 
 @keyframes moveSecond {
@@ -97,7 +97,7 @@
   right: -6rem;
   top: -2rem;
   z-index: -22;
-  animation: moveThird 10s infinite;
+  animation: moveThird 5s infinite;
 }
 
 @keyframes moveThird {
@@ -123,8 +123,7 @@
   padding-bottom: 2rem;
 }
 
-.sectionHeading h4 {
-  font-size: 1.5rem;
+.sectionHeading {
   color: #323232;
 }
 
@@ -155,33 +154,13 @@
   margin-bottom: 7.5rem !important;
 }
 /*---------------------*/
-/* Coloured Containers */
 
-.colouredInnerContainer {
-  padding: 0rem 2rem;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 60rem;
-  margin: 0 auto;
-}
-
-.colouredContainer {
-  margin-top: 7.5rem !important;
-  background: rgb(189, 79, 255);
-  background: linear-gradient(
-    125deg,
-    rgba(189, 79, 255, 1) 0%,
-    rgba(93, 79, 255, 1) 100%
-  );
-}
-/*---------------------*/
-
-.colouredContainer .about-me .sectionHeading .headerLine {
+.about-me .sectionHeading .headerLine {
   background-color: #fff;
 }
 
-.colouredContainer .about-me .sectionHeading h4,
-.colouredContainer .about-me .paragraph-content {
+.about-me .sectionHeading h2,
+.about-me .paragraph-content {
   color: #fff;
 }
 
@@ -233,6 +212,7 @@
   background: none;
   border: 1.5px solid #5d4fff;
   color: #5d4fff;
+  font-weight: 500;
 }
 .secondary-button:hover{
   background:rgba(93, 79, 255, 0.05);

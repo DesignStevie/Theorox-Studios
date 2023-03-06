@@ -2,7 +2,7 @@ const projectData = [
   {
     id: 0,
     projectName: "Onboarding Wizard",
-    linkName: "/project01",
+    linkName: "/oboarding_wizard",
     company: "Gallagher New Zealand",
     squad: "1 Product Manager, 4 Engineers, 2 Testers",
     timeframe: " Oct 2022 - Feb 2023",
@@ -10,7 +10,7 @@ const projectData = [
       "Creating a cloud security management solution for cardholder and building control.",
     long_description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-    image: require("../Images/web_client.png"),
+    image: require("../Images/ProjectTileOnboarding.png"),
     problem:
       "My squads objective was to shift a pre-existing on premise software to an all cloud solution while improving all usability. We came across a large feature where we needed to look at improving vastly which was the onboarding process of a new Cardholder/User, this would be a new feature compared to the on premise software but still utilising small existing features.",
     understand:
@@ -31,8 +31,36 @@ const projectData = [
   },
   {
     id: 1,
+    projectName: "Two Factor Authenticator",
+    linkName: "/two_factor_authenticator",
+    company: "Gallagher New Zealand",
+    squad: "1 Product Manager, 3 Engineers, 2 Testers",
+    timeframe: " Jan 2022 - Apr 2022",
+    short_description:
+      "Revamping and adding a 2FA Solution to a pre-existing mobile credential app for IOS & Android.",
+    long_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+    image: require("../Images/ProjectTileCredentials.png"),
+    problem:
+      "When developing our Cloud Security solution we needed to create a 2FA (Two Factor Authenticator) to better secure the login process to the Cloud Security system using our existing Mobile Credential App.",
+    understand:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
+    research:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
+    ideate:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
+    prototype:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
+    validate:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
+    finalSolution:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
+    finalSolutionImage: require("../Images/2FAFinal.png"),
+  },
+  {
+    id: 2,
     projectName: "Credential Request",
-    linkName: "/project02",
+    linkName: "/credential_request",
     company: "Gallagher New Zealand",
     squad: "1 Product Manager, 4  Engineers, 2 Testers",
     timeframe: " Oct 2022 - Mar 2023",
@@ -56,34 +84,6 @@ const projectData = [
     finalSolution:
       "After finalising data we received from all the test users I made some minor adjustments to the prototype and could confidently push it over to the developers to build. \n \n We will continue refining and make any further adjustments in the future as we get more feedback from all our users.",
     finalSolutionImage: require("../Images/RequestCredentialFinal.png"),
-  },
-  {
-    id: 2,
-    projectName: "Two Factor Authenticator",
-    linkName: "/project03",
-    company: "Gallagher New Zealand",
-    squad: "1 Product Manager, 3 Engineers, 2 Testers",
-    timeframe: " Jan 2022 - Apr 2022",
-    short_description:
-      "Revamping and adding a 2FA Solution to a pre-existing mobile credential app for IOS & Android.",
-    long_description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-    image: require("../Images/mobile_connect.png"),
-    problem:
-      "When developing our Cloud Security solution we needed to create a 2FA (Two Factor Authenticator) to better secure the login process to the Cloud Security system using our existing Mobile Credential App.",
-    understand:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
-    research:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
-    ideate:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
-    prototype:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
-    validate:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
-    finalSolution:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Utenim ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit  esse cillum dolore eu fugiatnulla pariatur. \n \n Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. \n \n Excepteur sint occaecat tat non proident, sunt in culpa qui officia deserunt mollitanim id est laborum.",
-    finalSolutionImage: require("../Images/2FAFinal.png"),
   },
 ];
 

@@ -11,7 +11,9 @@
   gap:2rem;
   display: flex;
 }
-
+.footer-container h1{
+  color:#464646;
+}
 .footer-list {
   color: #fff;
 }

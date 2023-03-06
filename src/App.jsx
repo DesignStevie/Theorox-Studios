@@ -3,7 +3,7 @@ import UnderConstruction from "./Pages/UnderConstruction";
 import Home from "./Pages/Home";
 import MyWork from "./Pages/MyWork";
 import Contact from "./Pages/Contact";
-import About from "./Pages/About";
+import Resume from "./Pages/Resume";
 import Project from "./Pages/Project";
 import projectData from "./Data/ProjectData";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/" element={<UnderConstruction />} />
         <Route path="/home" element={<Home />} />
         <Route path="/my-work" element={<MyWork />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
         <Route
           path="/my-work/:project"

@@ -33,8 +33,8 @@ function NavBar() {
           <NavLink to='/my-work' className={({isActive }) => isActive ? "nav-item-mobile selected" : "nav-item-mobile"}>
             Work
           </NavLink>
-          <NavLink to='/about' className={({isActive }) => isActive ? "nav-item-mobile selected" : "nav-item-mobile"}>
-            About
+          <NavLink to='/resume' className={({isActive }) => isActive ? "nav-item-mobile selected" : "nav-item-mobile"}>
+            Resume
           </NavLink>
           <NavLink to='/contact' className={({isActive }) => isActive ? "nav-item-mobile selected" : "nav-item-mobile"}>
             Contact
@@ -49,8 +49,8 @@ function NavBar() {
         <NavLink to='/my-work' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
           Work
         </NavLink>
-        <NavLink to='/about' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
-          About
+        <NavLink to='/resume' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
+          Resume
         </NavLink>
         <NavLink to='/contact' className={({isActive }) => isActive ? "nav-item selected" : "nav-item "}>
           Contact
