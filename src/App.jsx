@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import UnderConstruction from "./Pages/UnderConstruction";
 import Home from "./Pages/Home";
 import MyWork from "./Pages/MyWork";
 import Contact from "./Pages/Contact";

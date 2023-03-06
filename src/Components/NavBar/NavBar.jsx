@@ -9,7 +9,7 @@ function NavBar() {
       <div className="mobile-menu-container">
         <div className="sidenav-mobile">
           <NavLink
-            to="/home"
+            to="/"
             className={({ isActive }) =>
               isActive ? "nav-item selected" : "nav-item "
             }
