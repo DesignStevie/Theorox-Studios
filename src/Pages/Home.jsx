@@ -100,11 +100,15 @@ function Home() {
             View All
           </Link> */}
         </div>
-        <WorkItem />
-        <div className="workItemButton">
-          <Link to="/my-work">
-            <button className="roundbutton secondary-button viewAllButton">View All</button>
-          </Link>
+        <div className="containerPlain">
+          <WorkItem />
+          <div className="workItemButton">
+            <Link to="/my-work">
+              <button className="roundbutton secondary-button viewAllButton">
+                View All
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 

@@ -20,14 +20,13 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("Message Sent");
+          // Message Sent
           setVerification(false);
+          window.grecaptcha.reset();
           e.target.reset();
         },
         (error) => {
-          console.log(error.text);
-          console.log("An Error has occured");
+          // Message Failed
         }
       );
   };

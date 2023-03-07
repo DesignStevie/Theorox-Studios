@@ -58,7 +58,6 @@ Link{
 @media only screen and (max-width: 768px) {
   .workitems {
     grid-template-columns: 1fr;
-    padding: 2rem 1rem 0rem 1rem;
     gap: 2.5rem;
   }
 }
