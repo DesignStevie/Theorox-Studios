@@ -9,9 +9,7 @@ function MyWork() {
     <>
       <div className="page-container">
         <NavBar />
-        <div className="containerPlain">
           <h1 className="pageHeading">My Work.</h1>
-        </div>
         <div className="containerPlain">
         <WorkPageItems />
         </div>

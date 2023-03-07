@@ -21,37 +21,45 @@ a,
 button {
   margin: 0;
   padding: 0;
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Golos Text", sans-serif;
 }
-h4{
+h4 {
   font-size: 1rem;
 }
-h3{
+h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-h2{
- font-size: 2rem;
- font-weight: 600;
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-h1{
+h1 {
   font-size: 4rem;
 }
 
 p {
   font-size: 0.875rem;
 }
-b{
+b {
   font-weight: 600;
 }
-.containerPlain{
+.containerPlain {
   padding: 4rem 1rem;
   max-width: 60rem;
   margin: 0 auto;
 }
 
-.colouredBackground{
+.headerLineLarge {
+  width: 4rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin: 4rem 0rem;
+}
+
+.colouredBackground {
   margin: 0 auto;
   background: rgb(189, 79, 255);
   background: linear-gradient(
@@ -59,16 +67,22 @@ b{
     rgba(189, 79, 255, 1) 0%,
     rgba(93, 79, 255, 1) 100%
   );
-
 }
 
 .page-container {
   margin-top: 3.5rem;
 }
 
-.pageHeadingWhite{
+.pageHeadingWhite {
+  font-weight: 600;
   font-size: 4rem;
   color: #fff;
+}
+
+.pageHeadingPurple {
+  font-weight: 600;
+  font-size: 4rem;
+  color: #5D4FFF;
 }
 
 code {

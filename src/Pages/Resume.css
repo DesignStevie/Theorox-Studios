@@ -1,0 +1,23 @@
+.resumeAbout p{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.experienceContainer, .educationContainer{
+    padding-top: 4rem;
+}
+
+.achievementContainer{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experienceTitle, .educationTitle, .achievementTitle{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.experienceCompany, .experienceDescription, .experienceDate, .educationSchool, .educationDate, .educationDescription{
+    font-size: 1rem;
+}

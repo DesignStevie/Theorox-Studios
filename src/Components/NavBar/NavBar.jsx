@@ -72,10 +72,8 @@ function NavBar() {
             Resume
           </NavLink>
           <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive ? "nav-item-mobile selected" : "nav-item-mobile"
-            }end
+            to="/#contact"
+            className="nav-item-mobile"
           >
             Contact
           </NavLink>
@@ -108,10 +106,8 @@ function NavBar() {
           Resume
         </NavLink>
         <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive ? "nav-item selected" : "nav-item "
-          }end
+          to="/#contact"
+          className="nav-item"
         >
           Contact
         </NavLink>

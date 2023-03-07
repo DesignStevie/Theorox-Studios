@@ -1,6 +1,6 @@
 import React from "react";
-import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
@@ -9,8 +9,20 @@ import MyImage from "../Images/header-image-plain.png";
 import "./Home.css";
 
 function Home() {
+  const location = useLocation();
   const contactSection = useRef(null);
   const offset = 24;
+
+  useEffect(() => {
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
 
   const executeScroll = () => {
     document.body.scrollTo({
@@ -92,15 +104,11 @@ function Home() {
 
       {/* HOME --- MY WORK */}
 
-      <div className="my-work containerPlain">
+      <div className="containerPlain">
         <div className="sectionHeading">
           <h2>Featured Work</h2>
           <hr className="headerLine" />
-          {/* <Link className="linkButton" to="/my-work">
-            View All
-          </Link> */}
         </div>
-        <div className="containerPlain">
           <WorkItem />
           <div className="workItemButton">
             <Link to="/my-work">
@@ -108,7 +116,6 @@ function Home() {
                 View All
               </button>
             </Link>
-          </div>
         </div>
       </div>
 
@@ -147,7 +154,7 @@ function Home() {
       </div>
 
       {/* HOME --- MY WORK */}
-      <div ref={contactSection}></div>
+      <div ref={contactSection} id="contact"></div>
       <div className="containerPlain">
         <div className="sectionHeading">
           <h2>Get in Touch</h2>

@@ -19,7 +19,7 @@ function Project(myProjectData) {
           <div className="containerPlain">
             {/* PROJECT --- HEADING */}
             <h1 className="pageHeadingWhite">{displayProject.projectName}</h1>
-            <hr className="project-line" />
+            <hr className="headerLineLarge" />
             <h3 className="projectProblem subHeading">Introduction</h3>
             <p className="projectIntroductionText">{displayProject.problem}</p>
             <div className="projectDetails">
