@@ -12,9 +12,6 @@ function Contact() {
 
   const form = useRef();
 
-  // const configCall = new config();
-  console.log(process.env.REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY);
-
   let notificationDetails = null;
 
   const captchOnChange = (response) => {
@@ -34,7 +31,7 @@ function Contact() {
             Accept: "application/json",
             "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
           },
-          body: `secret=${process.env.REACT_APP_RECAPTCHA_SECRET_KEY}`,
+          body: `secret=${"6LfHKuokAAAAAAfIv-lFbP4PgefzZuKFr6n0lAjY"}`,
         }
       )
         .then((res) => res.json())
@@ -87,7 +84,7 @@ function Contact() {
         <textarea placeholder="Type your message here..." name="message" />
 
         <ReCAPTCHA
-          sitekey={process.env.REACT_APP_PUBLIC_RECAPTCHA_SITE_KEY}
+          sitekey={"6LfHKuokAAAAAAJXXwR--mhl4mw_hbcTw0mhx1WV"}
           onChange={captchOnChange}
         />
 
