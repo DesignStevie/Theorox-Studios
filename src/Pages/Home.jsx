@@ -1,7 +1,6 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import WorkItem from "../Components/WorkItem/WorkItem";
@@ -153,7 +152,7 @@ function Home() {
         </div>
       </div>
 
-      {/* HOME --- MY WORK */}
+      {/* HOME --- CONTACT ME */}
       <div ref={contactSection} id="contact"></div>
       <div className="containerPlain">
         <div className="sectionHeading">
@@ -161,10 +160,7 @@ function Home() {
           <hr className="headerLine" />
         </div>
         <div className="contactContainer">
-          <div className="halfForm">
-            <Contact />
-          </div>
-          <div className="contactImage halfForm"></div>
+          <h3>stevenodendaal98@gmail.com</h3>
         </div>
       </div>
 

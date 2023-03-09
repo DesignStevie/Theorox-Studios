@@ -1,12 +1,15 @@
 import "./Contact.css";
-import ReCAPTCHA from "react-google-recaptcha";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Toast from "../Toast/Toast";
-// import { config } from "dotenv";
 
 function Contact() {
-  const [isVerified, setVerification] = useState(false);
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [nameValid, setNameValid] = useState(false);
+  const [emailValid, setEmaiLValid] = useState(false);
+  const [isValid, setValidation] = useState(false);
+
   const [showNotification, setNotification] = useState(false);
   const [properties, setProperties] = useState(null);
 
@@ -14,53 +17,59 @@ function Contact() {
 
   let notificationDetails = null;
 
-  const captchOnChange = (response) => {
-    console.log("Captcha value: ", response);
-    setVerification(true);
-  };
-
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    if (isVerified) {
-      const isHuman = await fetch(
-        `https://www.google.com/recaptcha/api/siteverify`,
-        {
-          method: "post",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
-          },
-          body: `secret=${"6LfHKuokAAAAAAfIv-lFbP4PgefzZuKFr6n0lAjY"}`,
-        }
+    emailjs
+      .sendForm(
+        "service_j8t8zs7",
+        "template_cbvmg52",
+        form.current,
+        "M2UGuPl9NZ5edBLv6"
       )
-        .then((res) => res.json())
-        .then((json) => json.success)
-        .catch((err) => {
-          throw new Error(`Error in Google Siteverify API. ${err.message}`);
-        });
-      if (isHuman) {
-        emailjs
-          .sendForm(
-            "service_j8t8zs7",
-            "template_cbvmg52",
-            form.current,
-            "M2UGuPl9NZ5edBLv6"
-          )
-          .then(
-            (result) => {
-              // Message Sent
-              window.grecaptcha.reset();
-              e.target.reset();
-              setVerification(false);
-              successNotification();
-            },
-            (error) => {
-              // Message Failed
-            }
-          );
+      .then(
+        (result) => {
+          e.target.reset();
+          successNotification();
+        },
+        (error) => {
+          // Message Failed
+        }
+      );
+  };
+
+  const validateInputs = () => {
+    if (nameValid && emailValid) {
+      setValidation(true);
+      console.log(isValid);
+    } else {
+      console.log("Name: ", nameValid, " Email: ", emailValid);
+    }
+  };
+
+  const nameEntered = (event) => {
+    setInputName(event.target.value);
+
+    if (inputName !== "" && inputName !== " ") {
+      setNameValid(true);
+      validateInputs();
+    }
+  };
+
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const emailEntered = (event) => {
+    setInputEmail(event.target.value);
+
+    if (inputEmail !== "" && inputEmail !== " ") {
+      if (isValidEmail(inputEmail)) {
+        console.log("email is valid");
+        setEmaiLValid(true);
+        validateInputs();
       } else {
-        console.log("you are not Human");
+        setEmaiLValid(false);
       }
     }
   };
@@ -78,24 +87,36 @@ function Contact() {
 
   return (
     <>
-      <form className="contactForm" ref={form} onSubmit={sendEmail}>
-        <input placeholder="Name" type="text" name="user_name" />
-        <input placeholder="Email" type="email" name="user_email" />
-        <textarea placeholder="Type your message here..." name="message" />
-
-        <ReCAPTCHA
-          sitekey={"6LfHKuokAAAAAAJXXwR--mhl4mw_hbcTw0mhx1WV"}
-          onChange={captchOnChange}
+      <form
+        autoComplete="off"
+        className="contactForm"
+        ref={form}
+        onSubmit={sendEmail}
+      >
+        <input
+          autoComplete="false"
+          placeholder="Name"
+          type="text"
+          name="user_name"
+          onChange={nameEntered}
+          value={inputName}
         />
-
+        <input
+          autoComplete="false"
+          placeholder="Email"
+          type="email"
+          name="user_email"
+          onChange={emailEntered}
+          value={inputEmail}
+        />
+        <textarea placeholder="Type your message here..." name="message" />
         <div className="sendButtonContainer">
           <button
-            id="submit"
             type="submit"
             value="Send"
-            disabled={!isVerified}
+            disabled={!isValid}
             className={
-              isVerified
+              isValid
                 ? "roundbutton primary-button sendButton "
                 : "roundbutton disabled-button sendButton"
             }
