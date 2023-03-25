@@ -24,17 +24,17 @@
   border-radius: 0 0 0.5rem 0.5rem;
   background-color: #fff;
   transform: translateY(0.5rem);
-  transition: opacity 0.2s, transform 0.5s;
+  transition:transform 2s;
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
 }
 .workitem-container h3 {
   color: #5d4fff;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 .workitem-container h4{
-  color: #2e2e2e;
-  margin-bottom: 0.5rem;
+  color: #4F4F4F;
 }
 
 Link{
@@ -45,13 +45,9 @@ Link{
   font-weight: 300;
   padding-bottom: 1rem;
 }
-.workitem-container:hover > .workitem-content {
-  opacity: 1;
-  cursor: pointer;
-}
 
 .workitem-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
   cursor: pointer;
 }
 

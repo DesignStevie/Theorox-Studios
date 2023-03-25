@@ -135,20 +135,6 @@
   margin: 0;
 }
 
-.linkButton {
-  color: #5d4fff;
-  margin-left: auto;
-}
-
-/* Standard Containers */
-.container {
-  padding: 0rem 2rem;
-  margin-top: 3.25rem !important;
-  margin-bottom: 3.25rem !important;
-  max-width: 60rem;
-  margin: 0 auto;
-}
-/*---------------------*/
 /* Last Containers */
 .lastContainer {
   margin-bottom: 7.5rem !important;
@@ -186,7 +172,7 @@
 
 .social-icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .home-header-buttons {
@@ -200,21 +186,28 @@
 }
 
 .roundbutton {
-  width: 11.25rem;
-  height: 2.5rem;
-  border-radius: 3rem;
+  min-width: 13rem;
+  max-width: 13rem;
+  height: 3.5rem;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
 }
 .secondary-button{
-  background: none;
-  border: 1.5px solid #5d4fff;
+  background: rgba(93, 79, 255, 0.05);
   color: #5d4fff;
   font-weight: 500;
 }
-.secondary-button:hover{
-  background:rgba(93, 79, 255, 0.05);
+
+.linkButton {
+  color: #5d4fff;
+  margin-left: auto;
 }
+
+.secondary-button:hover{
+  background:rgba(93, 79, 255, 0.1);
+}
+
 .primary-button {
   color: #fff;
   background: rgb(189, 79, 255);
@@ -235,11 +228,19 @@
 
 /*Contact Form*/
 .contactContainer {
+  max-width: 50%;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contactSocials{
+  display: flex;
+  gap: 1rem;
 }
 
-.halfForm {
-  flex: 1;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 /*---------------------*/
 

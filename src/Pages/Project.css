@@ -42,26 +42,38 @@
   width: 100%;
   height: 100%;
 }
-.projectProblem {
-  color: #fff;
+
+/* ---------- Project Header ---------- */
+.headerImage img{
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 6rem;
+}
+.projectDetailsContainer{
+  display: flex;
+  gap: 1.5rem;
 }
 
 .projectIntroductionText {
-  color: #fff;
-  font-size: 1.25rem;
+  white-space: pre-line;
+  font-size: 1rem;
 }
 
 .projectDetails{
-  color: #fff;
-  margin-top: 4rem;
   gap:2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  min-width: 30%;
 }
 
 .details h4{
- margin-bottom: 0.5rem;
+  color: #5d4fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
+
+/* ---------- Project Text ---------- */
 
 .process-header {
   display: flex;
@@ -101,8 +113,14 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .page-heading{
-    font-size: 3rem;
+  .projectDetailsContainer{
+    flex-direction: column;
+  }
+  .headerImage img{
+    margin-bottom: 2rem;
+  }
+  .pageHeadingPurple{
+    font-size: 3rem;;
   }
   .projectHeaderInner{
     padding: 0 1rem;

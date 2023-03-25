@@ -15,12 +15,17 @@ function Project(myProjectData) {
     <>
       <NavBar />
       <div className="page-container">
-        <div className="colouredBackground">
+        <div className="greyBackground">
           <div className="containerPlain">
             {/* PROJECT --- HEADING */}
-            <h1 className="pageHeadingWhite">{displayProject.projectName}</h1>
-            <hr className="headerLineLarge" />
-            <h3 className="projectProblem subHeading">Introduction</h3>
+            <h1 className="pageHeadingPurple">{displayProject.projectName}</h1>
+            <div className="headerImage">
+                <img
+                  src={displayProject.finalSolutionImage}
+                  alt="Final Solution"
+                />
+              </div>
+            <div className="projectDetailsContainer">
             <p className="projectIntroductionText">{displayProject.problem}</p>
             <div className="projectDetails">
               <div className="details">
@@ -35,6 +40,7 @@ function Project(myProjectData) {
                 <h4>TIMEFRAME</h4>
                 <p>{displayProject.timeframe}</p>
               </div>
+            </div>
             </div>
           </div>
         </div>

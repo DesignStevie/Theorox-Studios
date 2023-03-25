@@ -9,8 +9,7 @@ const projectData = [
     short_description:
       "Creating a cloud security management solution for cardholder and building control.",
     image: require("../Images/ProjectTileOnboarding.png"),
-    problem:
-      "My squad's objective was to shift a pre-existing on-premise software to an all-cloud solution while improving all usability. We came across a large feature that we needed to look at improving vastly which was the onboarding process of a new Cardholder/User, this would be a new feature compared to the on-premise software but still utilising it’s existing features.",
+    problem:"One of my squad's main focus was to shift a pre-existing on-premise software to an all-cloud solution while overhaling and improving all usability with new and existing customers. \n \n A large feature that we needed to overcome was an onboarding process of new Cardholder/Users to the site, this would be a new feature compared to the on-premise software but still utilizing it’s existing features. \n \n I took to the task working with my squad in an agile environment to iterate on the feature to create a feasible onboarding solution.",
     understand:
       "I first looked at the existing on-premise solution for onboarding a user and deconstructed its features and found that it had no built-in process for onboarding users as it was built to accommodate any type of business workflow, this was a usability issue as it would require training and modules for the customers to be able to use and understand it. \n \n We knew we had to find and create a solution that could do the same thing but still be easy and intuitive to understand and use without the training and modules.",
     research:
@@ -65,9 +64,7 @@ const projectData = [
     long_description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     image: require("../Images/ProjectTileCredentialRequest.png"),
-    problem:
-      "A new project started and we needed to design & develop a full Cloud Access Management solution and required us to create friendly experience for the end user to enable them request new & replace card & mobile credentials.",
-    understand:
+    problem:"Another squads main focus was to design and develop a full Cloud Access Management solution for credential and access control that was customer driving in user experience. \n \n One of many features, we needed to create an MVP solution for the end requesters (i.e Employees) to enable them to quickly and effectively request new credentials from their organization and could be processed by the corresponding approvers (i.e HR Admins) within the system. \n \n I took to this task working with my squad in an agile environment to iterate on this feature with our customers to create a viable solution. ",    understand:
       "For this feature we looked to bringing all knowledge from across the teams and internal stakeholders as to what we expect this requesting workflow will look and what the users will experience. \n \n We took all this information and set out to discover what our customers and users will expect and want from this eperience.",
     research:
       "We went out to our customers and users that would fit our persona for this feature and interviewed them to get a broader idea as to what they would expect the requesting service will look like and what will be expected of their users. \n \n I looked at competitors solutions as well and found some common ground between them and how they solved their solution. I would use this as inspiration and make certain aspects a part from my own solution",

@@ -16,8 +16,7 @@ function WorkItem() {
             <img className="project-image" src={project.image} alt="project" />
             <div className="workitem-content">
               <h3> {project.projectName}</h3>
-              <h4>UX/UI</h4>
-              <p> {project.short_description}</p>
+              <h4> {project.short_description}</h4>
               <button className="roundbutton secondary-button">View Project</button>
             </div>
           </Link>
