@@ -226,6 +226,11 @@
   width: 60%;
 }
 
+.paragraph-content p{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 /*Contact Form*/
 .contactContainer {
   max-width: 50%;
@@ -258,11 +263,6 @@ a {
     margin: 2rem 0rem !important;
     font-size: 1rem;
   }
-  .home-header-socials {
-    gap: 3rem;
-    flex-direction: column !important;
-    align-items: flex-start;
-  }
 
   .my-work .sectionHeading {
     padding: 0rem 1rem;
@@ -279,9 +279,6 @@ a {
 .workItemButton{
   padding-top: 2rem;
   display: block;
-}
-.viewAllButton{
-  width: 100%;
 }
   .home-face {
     display: none;
@@ -313,8 +310,5 @@ a {
   .page-body {
     width: 100%;
     padding: 0 0.5rem;
-  }
-  .home-header-socials {
-    flex-direction: row;
   }
 }

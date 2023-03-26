@@ -14,7 +14,7 @@ function NavBar() {
               isActive ? "nav-item selected" : "nav-item "
             }
           >
-            Ts.
+            SO.
           </NavLink>
           <div className="mobile-menu" onClick={() => setOpen(!isOpen)}>
             {!isOpen ? (

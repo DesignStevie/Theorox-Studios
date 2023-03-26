@@ -13,22 +13,15 @@ function Resume() {
             <h1 className="pageHeadingWhite">About Me</h1>
             <hr className="headerLineLarge" />
             <p>
-              I grew up having a passion and desire to create, build, and make
-              everything around me look and feel good, I knew being in this
-              field would give me the best of both worlds to make things not
-              just look great but also feel good to the users.
+            I am a UX/UI designer with a passion for creating engaging and intuitive digital experiences as well as pursuing a side passion for front end development.
             </p>
             <br />
             <p>
-              I studied to get my Bachelor's in Design, majored in Interface
-              Design, and minored in Computer Science as I have a deep passion
-              for front-end development as well.
+            Over the past 2 years, I’ve honed my skills in facilitating design sprint workshops, user research, information architecture, wireframing, prototyping, and visual design, using tools such as Figma, Adobe Creative Suite, and VS Code.
             </p>
             <br />
             <p>
-              “If I can design it to look and feel good, why not build it as
-              well?” I now continue to pursue my career in UX/UI and continue
-              learning and developing myself further each day.
+            When im not designing, you can find me creating digital art, designing tattoos, playing online games, getting out and exploring new parts of New Zealand, and many more fun activities. These experiences have taught me to be curious, creative, and adaptive, traits that I bring to my work as a UX/UI designer.
             </p>
           </div>
         </div>

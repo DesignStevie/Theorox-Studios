@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import WorkItem from "../Components/WorkItem/WorkItem";
@@ -10,7 +10,6 @@ import "./Home.css";
 function Home() {
   const location = useLocation();
   const contactSection = useRef(null);
-  const offset = 24;
 
   useEffect(() => {
     if (location.hash) {
@@ -22,13 +21,6 @@ function Home() {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
   }, [location]);
-
-  const executeScroll = () => {
-    document.body.scrollTo({
-      behavior: "smooth",
-      top: contactSection.current.offsetTop - offset,
-    });
-  };
 
   return (
     <>
@@ -43,12 +35,11 @@ function Home() {
             A <b>UX/UI Designer</b> with a hint of <b>Frontend Development</b>.
           </h4>
           <div className="home-header-socials">
-            <button
+          <a href = "mailto: stevenodendaal98@gmail.com"><button
               className="roundbutton primary-button"
-              onClick={executeScroll}
             >
               Let's chat
-            </button>
+            </button></a>
           </div>
         </div>
         <b className="sphere first"></b>
@@ -63,13 +54,6 @@ function Home() {
           <h2>Featured Work</h2>
         </div>
         <WorkItem />
-        <div className="workItemButton">
-          <Link to="/my-work">
-            <button className="roundbutton secondary-button viewAllButton">
-              View All
-            </button>
-          </Link>
-        </div>
       </div>
 
       {/* HOME --- ABOUT ME */}
@@ -80,26 +64,15 @@ function Home() {
           </div>
           <div className="paragraph-content">
             <p>
-              I grew up having a passion and desire to create, build, and make
-              everything around me look and feel good, I knew being in this
-              field would give me the best of both worlds to make things not
-              just look great but also feel good to the users.
+            I am a UX/UI designer with a passion for creating engaging and intuitive digital experiences as well as pursuing a side passion for front end development.
             </p>
             <br />
             <p>
-              I studied to get my Bachelors in Design, majored in Interface
-              Design and minored in Computer Science as I also have a deep
-              passion for front end development as well.
+            Over the past 2 years, I’ve honed my skills in facilitating design sprint workshops, user research, information architecture, wireframing, prototyping, and visual design, using tools such as Figma, Adobe Creative Suite, and VS Code.
             </p>
             <br />
             <p>
-              If I can design it to look and feel good, why not build it as
-              well?
-            </p>
-            <br />
-            <p>
-              I now continue to persue my career in UX/UI and continue learning
-              and developing myself further each day.
+            When im not designing, you can find me creating digital art, designing tattoos, playing online games, getting out and exploring new parts of New Zealand, and many more fun activities. These experiences have taught me to be curious, creative, and adaptive, traits that I bring to my work as a UX/UI designer.
             </p>
           </div>
         </div>
@@ -117,7 +90,6 @@ function Home() {
             </h4>
             <a href = "mailto: stevenodendaal98@gmail.com"><button
               className="roundbutton primary-button"
-              onClick={executeScroll}
             >
               Let's chat
             </button></a>
