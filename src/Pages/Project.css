@@ -60,6 +60,15 @@
   font-size: 1.5rem;
   color: #5d4fff;
 }
+
+.processImage{
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.processImage img{
+  width: 100%;
+  object-fit: contain;
+}
 .projectSolution {
   color: #fff;
 }

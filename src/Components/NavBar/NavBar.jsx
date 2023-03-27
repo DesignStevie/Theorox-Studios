@@ -12,7 +12,7 @@ function NavBar() {
             to="/"
             className={({ isActive }) =>
               isActive ? "nav-item selected" : "nav-item "
-            }
+            }end
           >
             SO.
           </NavLink>

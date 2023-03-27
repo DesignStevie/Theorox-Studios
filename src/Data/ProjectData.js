@@ -22,9 +22,12 @@ const projectData = [
       "I experimented with a new way of testing our prototypes by using a platform called Useberry. Userberry is an online platform where I can upload my Figma prototypes, create questions and give some context as to what the user needs to complete. \n \n Because we have customers all across the world I thought it would be great to create this on Useberry and send out a mass link to all our external customers where they can in their own time complete the test. \n \n I received way more results than expected which were great and viewed all recordings and compiled the results and completion rates and found that the prototype was a great success. We moved this straight over to development.",
     finalSolution:
       "After receiving all the results we were happy to move this over into our next planned sprint where we can build this feature in different parts for MVP (minimal viable product) and get our customers to begin using it with their real-world data. \n \n We still look to continue refining and making the experience even better as we receive more feedback and suggestions from our customers. \n \n We already began investigating a customised Wizard experience tailored to the user's preference and what steps they use and don't use to make their workflows even faster for onboarding Cardholders/Users.",
-    finalSolutionImage: require("../Images/OnboardingFinalsolution.png"),
-    finalSolutionImageTwo: require("../Images/OnboardingCredential.png"),
-    finalSolutionImageThree: require("../Images/OnboardingSummary.png")
+    headerImage: require("../Images/OnboardingFinalsolution.png"),
+    empathiseImage: require("../Images/CCWeb_Empathise.png"),
+    researchImage: require("../Images/CCWeb_Research.png"),
+    ideateImage: require("../Images/CCWeb_Ideate.png"),
+    prototypeImage: require("../Images/CCWeb_Prototype.png")
+
   },
   {
     id: 1,
@@ -50,7 +53,7 @@ const projectData = [
       "I began testing my solution with internal users that would suit the targeted persona, and validate that they can find the 2FA code quickly, manage multiple 2FA codes, and also validate the additional UI changes that I made to improve the overall usability. \n \n After successfully validating my prototypes internally I moved over to our external customers and tested for the same tasks above. \n \n With all users passing my tests and given minor feedback, I could successfully conclude that the new feature and added enhancements were ready to be moved over to our developers.",
     finalSolution:
       "Confident with the results from the user tests, I was able to pass this over to the developers to begin building for Android and IOS. I look to further improve a lot more features of the app in the future that I discovered along the journey but was short on time and was not in scope. \n \n When Command Centre Web became live, we started seeing a lot more uptake on the Mobile App.",
-    finalSolutionImage: require("../Images/2FAFinal.png"),
+    headerImage: require("../Images/2FAFinal.png"),
   },
   {
     id: 2,
@@ -76,7 +79,7 @@ const projectData = [
       "We went into Wintec and organised a time to get 15 students to work through some scenarios and complete the tasks on my prototype. The students would be a targeted persona and what be a great set of users to get honest feedback from. \n \n We separated the Groups to do one task for requesting a new credential and we had the other group request a replacement credential. \n \n We had a complete 100% completion rate and got some great feedback and suggestions from the students.",
     finalSolution:
       "After finalising data we received from all the test users I made some minor adjustments to the prototype and could confidently push it over to the developers to build. \n \n We will continue refining and make any further adjustments in the future as we get more feedback from all our users.",
-    finalSolutionImage: require("../Images/RequestCredentialFinal.png"),
+    headerImage: require("../Images/RequestCredentialFinal.png"),
   },
 ];
 

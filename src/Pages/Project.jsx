@@ -21,7 +21,7 @@ function Project(myProjectData) {
             <h1 className="pageHeadingPurple">{displayProject.projectName}</h1>
             <div className="headerImage">
                 <img
-                  src={displayProject.finalSolutionImage}
+                  src={displayProject.headerImage}
                   alt="Final Solution"
                 />
               </div>
@@ -51,8 +51,15 @@ function Project(myProjectData) {
           </div>
           <div className="process-container">
             <div className="process-text">{displayProject.understand}</div>
-            <div className="process-image"></div>
           </div>
+        </div>
+        <div className="greyBackground">
+              <div className="processImage">
+                <img
+                  src={displayProject.empathiseImage}
+                  alt="Final Solution"
+                />
+              </div>
         </div>
         {/* PROJECT --- RESEARCH */}
         <div className="containerPlain">
@@ -64,6 +71,14 @@ function Project(myProjectData) {
             <div className="process-image"></div>
           </div>
         </div>
+        <div className="greyBackground">
+              <div className="processImage">
+                <img
+                  src={displayProject.researchImage}
+                  alt="Final Solution"
+                />
+              </div>
+        </div>
         {/* PROJECT --- IDEATE */}
         <div className="containerPlain">
           <div className="process-header">
@@ -74,7 +89,14 @@ function Project(myProjectData) {
             <div className="process-image"></div>
           </div>
         </div>
-
+        <div className="greyBackground">
+              <div className="processImage">
+                <img
+                  src={displayProject.ideateImage}
+                  alt="Final Solution"
+                />
+              </div>
+        </div>
         {/* PROJECT --- PROTOTYPE */}
         <div className="containerPlain">
           <div className="process-header">
@@ -84,6 +106,14 @@ function Project(myProjectData) {
             <div className="process-text">{displayProject.prototype}</div>
             <div className="process-image"></div>
           </div>
+        </div>
+        <div className="greyBackground">
+              <div className="processImage">
+                <img
+                  src={displayProject.prototypeImage}
+                  alt="Final Solution"
+                />
+              </div>
         </div>
         {/* PROJECT --- VALIDATE */}
         <div className="containerPlain">
@@ -105,7 +135,7 @@ function Project(myProjectData) {
               </div>
               <div className="process-image">
                 <img
-                  src={displayProject.finalSolutionImage}
+                  src={displayProject.headerImage}
                   alt="Final Solution"
                 />
               </div>
