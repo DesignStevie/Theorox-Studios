@@ -28,6 +28,7 @@ const projectData = [
     researchImage: require("../Images/CCWeb_Research.png"),
     ideateImage: require("../Images/CCWeb_Ideate.png"),
     prototypeImage: require("../Images/CCWeb_Prototype.png"),
+    finalSolutionImage: require("../Images/finalSolution_CCWeb.png"),
   },
   {
     id: 1,
@@ -54,6 +55,8 @@ const projectData = [
     finalSolution:
       "Confident with the results from the user tests, I was able to pass this over to the developers to begin building for Android and IOS. I look to further improve a lot more features of the app in the future that I discovered along the journey but was short on time and was not in scope. \n \n When Command Centre Web became live, we started seeing a lot more uptake on the Mobile App.",
     headerImage: require("../Images/2FAFinal.png"),
+    finalSolutionImage: require("../Images/finalSolution_Credentials.png")
+    
   },
   {
     id: 2,
@@ -82,6 +85,10 @@ const projectData = [
     finalSolution:
       "After finalising data we received from all the test users I made some minor adjustments to the prototype and could confidently push it over to the developers to build. \n \n We will continue refining and make any further adjustments in the future as we get more feedback from all our users.",
     headerImage: require("../Images/RequestCredentialFinal.png"),
+    researchImage: require("../Images/ARW_Research.png"),
+    ideateImage: require("../Images/ARW_Ideate.png"),
+    prototypeImage: require("../Images/ARW_Prototype.png"),
+    finalSolutionImage: require("../Images/finalSolution_ARW.png")
   },
 ];
 

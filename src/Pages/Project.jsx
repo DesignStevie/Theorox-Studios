@@ -124,18 +124,13 @@ function Project(myProjectData) {
           </div>
         </div>
         {/* PROJECT --- FINAL SOLUTION */}
-        <div className="colouredBackground">
-          <div className="containerPlain">
-            <h3 className="projectSolution subHeading">Handover Solution</h3>
-            <div className="finalSolutionContainer">
-              <div className="process-textSolution">
-                {displayProject.finalSolution}
-              </div>
-              <div className="process-image">
-                <img src={displayProject.headerImage} alt="Final Solution" />
-              </div>
+        <div className="greyBackground">
+            <div className="process-image">
+              <img
+                src={displayProject.finalSolutionImage}
+                alt="Final_solution_image"
+              />
             </div>
-          </div>
         </div>
         <div className="containerPlain">
           <div className="workitems">
