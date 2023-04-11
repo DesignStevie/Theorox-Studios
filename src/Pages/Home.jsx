@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import WorkItem from "../Components/WorkItem/WorkItem";
-import MyImage from "../Images/me.png";
 import "./Home.css";
 
 function Home() {
