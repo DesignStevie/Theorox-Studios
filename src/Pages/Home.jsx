@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 import NavBar from "../Components/NavBar/NavBar";
 import WorkItem from "../Components/WorkItem/WorkItem";
-import MyImage from "../Images/header-image-plain.png";
+import MyImage from "../Images/me.png";
 import "./Home.css";
 
 function Home() {
@@ -26,7 +26,7 @@ function Home() {
     <>
       <NavBar />
       <div className="header-background">
-        <img className="home-face" src={MyImage} alt="face" />
+        {/* <img className="home-face" src={MyImage} alt="face" /> */}
       </div>
       <div className="header-container">
         <div className="header-content">

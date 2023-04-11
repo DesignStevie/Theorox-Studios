@@ -55,6 +55,9 @@ const projectData = [
     finalSolution:
       "Confident with the results from the user tests, I was able to pass this over to the developers to begin building for Android and IOS. I look to further improve a lot more features of the app in the future that I discovered along the journey but was short on time and was not in scope. \n \n When Command Centre Web became live, we started seeing a lot more uptake on the Mobile App.",
     headerImage: require("../Images/2FAFinal.png"),
+    researchImage: require("../Images/Credentials_Research.png"),
+    ideateImage: require("../Images/Credentials_Ideate.png"),
+    prototypeImage: require("../Images/Credentials_Prototype.png"),
     finalSolutionImage: require("../Images/finalSolution_Credentials.png")
     
   },
