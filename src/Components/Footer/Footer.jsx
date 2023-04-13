@@ -1,19 +1,30 @@
-import React from 'react'
-import "./Footer.css"
+import React from "react";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <div className='footer'>
-        <div className='footer-container'>
-            <h1>SO.</h1>
-            <div className='footer-contact footer-list'>
-                <div className='footer-email'>
-                    <h4>Contact</h4>
-                    <p>stevenodendaal98@gmail.com</p>
-                </div>
-                <div className='footer-socials'>
-                    <h4>Socials</h4>
-                    <div className="social-icons">
+    <div className="footer">
+      <div className="footer-container">
+        <svg
+          width="155"
+          height="100"
+          viewBox="0 0 155 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M136.532 11.8908L100.914 47.542L94.9744 41.5966L118.755 17.8361L100.935 0L77.1758 23.7815L53.4165 0L35.639 17.8571L59.3773 41.6176L53.4375 47.542L17.8195 11.8908L0 29.7269L65.2962 95.084C71.8447 101.639 82.486 101.639 89.0345 95.084L154.331 29.7269L136.511 11.8908H136.532ZM83.1157 65.3782L77.1758 71.3025L71.257 65.3782L77.1758 59.4328L83.1157 65.3782Z"
+            fill="#4F4F4F"
+          />
+        </svg>
+        <div className="footer-contact footer-list">
+          <div className="footer-email">
+            <h4>Contact</h4>
+            <p>stevenodendaal98@gmail.com</p>
+          </div>
+          <div className="footer-socials">
+            <h4>Socials</h4>
+            <div className="social-icons">
               <svg
                 width="24"
                 height="24"
@@ -57,14 +68,14 @@ function Footer() {
                 />
               </svg>
             </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div className='footer-madeby'>
-            <p>Proudly made by me :)</p>
-        </div>
+      </div>
+      <div className="footer-madeby">
+        <p>Proudly made by me :)</p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

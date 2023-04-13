@@ -101,6 +101,12 @@ b {
   color: #5D4FFF;
 }
 
+.pageHeadingPurpleSmall{
+  font-weight: 600;
+  font-size: 2rem;
+  color: #5D4FFF;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

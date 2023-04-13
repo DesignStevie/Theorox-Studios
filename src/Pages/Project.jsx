@@ -149,8 +149,8 @@ function Project(myProjectData) {
                       alt="project"
                     />
                     <div className="workitem-content">
-                      <h3> {project.projectName}</h3>
-                      <p> {project.short_description}</p>
+                      <h2 className="pageHeadingPurpleSmall"> {project.projectName}</h2>
+                      <h4> {project.short_description}</h4>
                       <button className="roundbutton secondary-button">
                         View Project
                       </button>

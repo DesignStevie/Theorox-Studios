@@ -1,23 +1,80 @@
-.resumeAbout p{
-    color: #fff;
-    font-size: 1.25rem;
+.resumeAbout p {
+  color: #2e2e2e;
+  font-size: 1.25rem;
+}
+.resumeAbout h1{
+    margin-bottom: 4rem;
 }
 
-.experienceContainer, .educationContainer{
-    padding-top: 4rem;
+.experienceContainer,
+.educationContainer {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.achievementContainer{
-    padding-top: 2rem;
-    display: flex;
-    justify-content: space-between;
+.experienceDetails,
+.educationDetails {
+  width: 75%;
+}
+.experienceCompanyLogo,
+.educationCompanyLogo {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.experienceTitle, .educationTitle, .achievementTitle{
-    font-weight: 600;
-    font-size: 1.25rem;
+.achievementContainer {
+  background: #fafafa;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.achievementDate {
+  margin-left: auto;
 }
 
-.experienceCompany, .experienceDescription, .experienceDate, .educationSchool, .educationDate, .educationDescription{
-    font-size: 1rem;
+.experienceTitle,
+.educationTitle,
+.achievementTitle {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.experienceCompany,
+.experienceDescription,
+.educationSchool,
+.educationDescription {
+  font-size: 1rem;
+}
+
+.educationDate,
+.experienceDate {
+  font: 0.875;
+  color: #828282;
+}
+
+@media only screen and (max-width: 768px) {
+  .experienceContainer,
+  .educationContainer {
+    flex-direction: column;
+  }
+
+  .experienceDetails,
+  .educationDetails {
+    width: 100%;
+  }
+
+  .experienceCompanyLogo,
+  .educationCompanyLogo {
+    width: 50%;
+  }
 }
