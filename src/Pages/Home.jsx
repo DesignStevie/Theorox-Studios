@@ -2,6 +2,7 @@ import React from "react";
 import { useRef, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
+import MyImage from "../Images/me.png";
 import NavBar from "../Components/NavBar/NavBar";
 import WorkItem from "../Components/WorkItem/WorkItem";
 import "./Home.css";
@@ -24,9 +25,7 @@ function Home() {
   return (
     <>
       <NavBar />
-      <div className="header-background">
-        {/* <img className="home-face" src={MyImage} alt="face" /> */}
-      </div>
+      <div className="header-background"></div>
       <div className="header-container">
         <div className="header-content">
           <h1>Hi, I'm Steven.</h1>
@@ -59,27 +58,31 @@ function Home() {
           <div className="sectionHeading">
             <h2>This is Me!</h2>
           </div>
-          <div className="paragraph-content">
-            <p>
-              I am a UX/UI designer with a passion for creating engaging and
-              intuitive digital experiences as well as pursuing a side passion
-              for front end development.
-            </p>
-            <br />
-            <p>
-              Over the past 2 years, I’ve honed my skills in facilitating design
-              sprint workshops, user research, information architecture,
-              wireframing, prototyping, and visual design, using tools such as
-              Figma, Adobe Creative Suite, and VS Code.
-            </p>
-            <br />
-            <p>
-              When im not designing, you can find me creating digital art,
-              designing tattoos, playing online games, getting out and exploring
-              new parts of New Zealand, and many more fun activities. These
-              experiences have taught me to be curious, creative, and adaptive,
-              traits that I bring to my work as a UX/UI designer.
-            </p>
+          <div className="aboutMeContainer">
+            <div className="paragraph-content">
+              <p>
+                I am a UX/UI designer with a passion for creating engaging and
+                intuitive digital experiences as well as pursuing a side passion
+                for front end development.
+              </p>
+              <br />
+              <p>
+                Over the past 2 years, I’ve honed my skills in facilitating
+                design sprint workshops, user research, information
+                architecture, wireframing, prototyping, and visual design, using
+                tools such as Figma, Adobe Creative Suite, and VS Code.
+              </p>
+              <br />
+              <p>
+                When im not designing, you can find me creating digital art,
+                designing tattoos, playing online games, getting out and
+                exploring new parts of New Zealand, and many more fun
+                activities. These experiences have taught me to be curious,
+                creative, and adaptive, traits that I bring to my work as a
+                UX/UI designer.
+              </p>
+            </div>
+              <img className="profileImage" src={MyImage} alt="face" />
           </div>
         </div>
       </div>

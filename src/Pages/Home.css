@@ -22,16 +22,6 @@
   margin: 0 auto;
   display: flex;
 }
-
-.home-face {
-  width: calc(100vh / 1.5);
-  height: calc(100vh / 1.5);
-  position: absolute;
-  bottom: 8rem;
-  left: calc(100vw / 2);
-  z-index: -10;
-}
-
 .sphere {
   display: block;
   border-radius: 50%;
@@ -179,8 +169,8 @@
   display: flex;
   gap: 1rem;
 }
-.workItemButton{
-  padding-top:4rem;
+.workItemButton {
+  padding-top: 4rem;
   display: flex;
   justify-content: center;
 }
@@ -193,7 +183,7 @@
   border: none;
   cursor: pointer;
 }
-.secondary-button{
+.secondary-button {
   background: rgba(93, 79, 255, 0.05);
   color: #5d4fff;
   font-weight: 500;
@@ -204,8 +194,8 @@
   margin-left: auto;
 }
 
-.secondary-button:hover{
-  background:rgba(93, 79, 255, 0.1);
+.secondary-button:hover {
+  background: rgba(93, 79, 255, 0.1);
 }
 
 .primary-button {
@@ -222,11 +212,20 @@
   opacity: 0.9;
 }
 
+.aboutMeContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 .paragraph-content {
   width: 60%;
 }
 
-.paragraph-content p{
+.profileImage {
+  width: 40%;
+  object-fit: cover;
+}
+.paragraph-content p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -238,7 +237,7 @@
   flex-direction: column;
   gap: 2rem;
 }
-.contactSocials{
+.contactSocials {
   display: flex;
   gap: 1rem;
 }
@@ -250,7 +249,7 @@ a {
 /*---------------------*/
 
 @media only screen and (max-width: 480px) {
-  .contactContainer{
+  .contactContainer {
     max-width: 100%;
   }
   .header-content h1 {
@@ -279,12 +278,20 @@ a {
   .container {
     padding: 0 1rem;
   }
-.workItemButton{
-  padding-top: 2rem;
-  display: block;
-}
-  .home-face {
-    display: none;
+  .workItemButton {
+    padding-top: 2rem;
+    display: block;
+  }
+  .aboutMeContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .profileImage {
+    width: 80%;
+  }
+  .paragraph-content {
+    width: 100%;
   }
   .paragraph-content {
     width: 100%;
