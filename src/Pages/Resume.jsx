@@ -21,6 +21,7 @@ function Resume() {
               and visual design, and I am proficient in industry-standard design
               tools such as Figma, and Adobe Creative Suite.
             </p>
+            
             <br/>
             <p>
               I am a collaborative team player who values open communication and
