@@ -46,7 +46,7 @@ function Project(myProjectData) {
         {/* PROJECT --- UNDERSTAND */}
         <div className="containerPlain">
           <div className="process-header">
-            <h3 className="processName">Empathise & Define</h3>
+            <h3 className="processName">Discover</h3>
           </div>
           <div className="process-container">
             <div className="process-text">{displayProject.understand}</div>
@@ -63,9 +63,7 @@ function Project(myProjectData) {
         {/* PROJECT --- RESEARCH */}
         <div className="containerPlain">
           <div className="process-header">
-            <h3 className="processName">
-              Research Strategy & Competitor Analysis
-            </h3>
+            <h3 className="processName">Define</h3>
           </div>
           <div className="process-container">
             <div className="process-text">{displayProject.research}</div>
@@ -82,7 +80,7 @@ function Project(myProjectData) {
         {/* PROJECT --- IDEATE */}
         <div className="containerPlain">
           <div className="process-header">
-            <h3 className="processName">Feature Ideation</h3>
+            <h3 className="processName">Ideate</h3>
           </div>
           <div className="process-container">
             <div className="process-text">{displayProject.ideate}</div>
@@ -99,7 +97,7 @@ function Project(myProjectData) {
         {/* PROJECT --- PROTOTYPE */}
         <div className="containerPlain">
           <div className="process-header">
-            <h3 className="processName">Creating Prototypes</h3>
+            <h3 className="processName">Prototype</h3>
           </div>
           <div className="process-container">
             <div className="process-text">{displayProject.prototype}</div>
@@ -116,7 +114,7 @@ function Project(myProjectData) {
         {/* PROJECT --- VALIDATE */}
         <div className="containerPlain">
           <div className="process-header">
-            <h3 className="processName">Usability Testing Insights</h3>
+            <h3 className="processName">Deliver</h3>
           </div>
           <div className="process-container">
             <div className="process-text">{displayProject.validate}</div>
@@ -125,12 +123,12 @@ function Project(myProjectData) {
         </div>
         {/* PROJECT --- FINAL SOLUTION */}
         <div className="greyBackground">
-            <div className="process-image">
-              <img
-                src={displayProject.finalSolutionImage}
-                alt="Final_solution_image"
-              />
-            </div>
+          <div className="process-image">
+            <img
+              src={displayProject.finalSolutionImage}
+              alt="Final_solution_image"
+            />
+          </div>
         </div>
         <div className="containerPlain">
           <div className="workitems">
@@ -149,7 +147,10 @@ function Project(myProjectData) {
                       alt="project"
                     />
                     <div className="workitem-content">
-                      <h2 className="pageHeadingPurpleSmall"> {project.projectName}</h2>
+                      <h2 className="pageHeadingPurpleSmall">
+                        {" "}
+                        {project.projectName}
+                      </h2>
                       <h4> {project.short_description}</h4>
                       <button className="roundbutton secondary-button">
                         View Project

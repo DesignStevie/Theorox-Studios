@@ -12,24 +12,23 @@ function Resume() {
           <div className="resumeAbout containerPlain">
             <h1 className="pageHeadingPurple">About Me</h1>
             <p>
-              I am a UX/UI designer with a passion for creating engaging and
-              intuitive digital experiences as well as pursuing a side passion
-              for front end development.
+              As an experienced UX designer with 2 years in the field, I bring a
+              wealth of knowledge and skills to every project I work on. I have
+              a strong understanding of user-centered design principles and have
+              honed my ability to create seamless and intuitive digital
+              experiences through extensive research, prototyping, and usability
+              testing. My expertise includes wireframing, interaction design,
+              and visual design, and I am proficient in industry-standard design
+              tools such as Figma, and Adobe Creative Suite.
             </p>
-            <br />
+            <br/>
             <p>
-              Over the past 2 years, I’ve honed my skills in facilitating design
-              sprint workshops, user research, information architecture,
-              wireframing, prototyping, and visual design, using tools such as
-              Figma, Adobe Creative Suite, and VS Code.
-            </p>
-            <br />
-            <p>
-              When im not designing, you can find me creating digital art,
-              designing tattoos, playing online games, getting out and exploring
-              new parts of New Zealand, and many more fun activities. These
-              experiences have taught me to be curious, creative, and adaptive,
-              traits that I bring to my work as a UX/UI designer.
+              I am a collaborative team player who values open communication and
+              feedback, and I strive to create designs that not only meet user
+              needs but also align with business goals. With a keen eye for
+              detail and a passion for creating meaningful interactions, I am
+              committed to crafting engaging and delightful experiences that
+              enhance user satisfaction and drive business success.
             </p>
           </div>
         </div>
@@ -147,9 +146,7 @@ function Resume() {
               </svg>
             </div>
             <div className="experienceDetails">
-              <p className="experienceTitle">
-                Graphic & Lead Web Designer
-              </p>
+              <p className="experienceTitle">Graphic & Lead Web Designer</p>
               <p className="experienceCompany">Glu Group</p>
               <p className="experienceDate">January 2021 - January 2022</p>
               <br />
@@ -324,7 +321,7 @@ function Resume() {
             <p className="achievementDate">2020</p>
           </div>
           <div className="achievementContainer">
-          <div className="achievementIcon">
+            <div className="achievementIcon">
               <svg
                 width="40"
                 height="40"
@@ -349,7 +346,7 @@ function Resume() {
             <p className="achievementDate">2020</p>
           </div>
           <div className="achievementContainer">
-          <div className="achievementIcon">
+            <div className="achievementIcon">
               <svg
                 width="40"
                 height="40"
@@ -374,7 +371,7 @@ function Resume() {
             <p className="achievementDate">2019</p>
           </div>
           <div className="achievementContainer">
-          <div className="achievementIcon">
+            <div className="achievementIcon">
               <svg
                 width="40"
                 height="40"
