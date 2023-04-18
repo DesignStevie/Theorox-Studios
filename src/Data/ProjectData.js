@@ -41,25 +41,25 @@ const projectData = [
       "Revamping and adding a 2FA Solution to a pre-existing mobile credential app for IOS & Android.",
     image: require("../Images/ProjectTileCredentials.png"),
     problem:
-      "When developing our Cloud Security solution we needed to create a 2FA (Two Factor Authenticator) to better secure the login process to Command Centre Web using our existing Mobile Credential App.",
+      "When developing our Cloud Security Solution we needed to create a 2FA (Two Factor Authenticator) to better secure the login process to Command Centre Web using our existing Mobile Credential App. \n \n I took to this task working with my squad in an agile environment to create the feature and release it as soon as possible. ",
     understand:
-      "After gathering all the requirements and how the Two Factor authenticator will be utilised to gain access to our Command Centre Web, I jumped in straight away and began gathering information about our existing Mobile App (Mobile Connect) and how it currently is being used by our users. \n \n Mobile Connect is a Gallagher Mobile App that is used as a digital credential to gain access through secure doors, rather than using a physical access card.",
+      "After gathering all the requirements and how the Two Factor Authenticator will be utilised to gain access to our Command Centre Web, I jumped in straight away and began gathering information about our existing Mobile App (Mobile Connect) and how it currently is being used by our users. \n \n Mobile Connect is a Gallagher Mobile App that is used as a digital credential to gain access through secure doors, rather than using a physical access card.",
     research:
       "I focused on looking at competitors that are used as Two Factor Authenticators such as Google Auth, Microsoft Authenticator, Adobe Account Access, and Blizzard Authenticator, I found some common ground between them all that can be used within our final solution, I also used the competitor's solutions as inspiration from the UI and would be applying certain key aspects to my solution as well.",
     ideate:
       "I made multiple concept designs of how I would imagine the solution would look like and where core features will be placed and easily accessed by users that are wanting to log in quickly. I took the time to improve on certain features in the app that I believe would further improve the user experience, such as moving items into a secondary menu, collapsing main menu items, and updating icons. \n \n I wanted to add the ability to make “favourites” so that if a user had to have multiple 2FA codes for logging into multiple sites they could manage it quickly and easily. \n \n I went back and forth to my squad and mentors for feedback, critique, and suggestions and made some minor adjustments, and would move it into the prototyping phase.",
     prototype:
-      "I could now begin making a hi-fi prototype that could be tested internally and externally with our customers. \n \n I designed the prototype in Adobe XD and after going back to my squad for some refinements, feedback, and critiques on the workflow I could then move this over to the testing phase.",
+      "I could now begin making a hi-fi prototype that could be tested internally and externally with our customers and stakeholders. \n \n I designed the prototype in Adobe XD and after going back to my squad for some refinements, feedback, and critiques, I could then move this over to the deliver phase.",
     validate:
       "I began testing my solution with internal users that would suit the targeted persona, and validate that they can find the 2FA code quickly, manage multiple 2FA codes, and also validate the additional UI changes that I made to improve the overall usability. \n \n After successfully validating my prototypes internally I moved over to our external customers and tested for the same tasks above. \n \n With all users passing my tests and given minor feedback, I could successfully conclude that the new feature and added enhancements were ready to be moved over to our developers.",
     finalSolution:
-      "Confident with the results from the user tests, I was able to pass this over to the developers to begin building for Android and IOS. I look to further improve a lot more features of the app in the future that I discovered along the journey but was short on time and was not in scope. \n \n When Command Centre Web became live, we started seeing a lot more uptake on the Mobile App.",
+      "I began testing my solution with users & stakeholders that would suit the targeted persona, and validate that they can find the 2FA code quickly, manage multiple 2FA codes, and also validate the additional UI changes that I made to improve the overall usability. \n \n With all users passing my tests, I could successfully conclude that the new feature and added enhancements were ready to be moved over to our developers.",
     headerImage: require("../Images/2FAFinal.png"),
+    empathiseImage: require("../Images/discoverImagePlaceholder01.png"),
     researchImage: require("../Images/Credentials_Research.png"),
     ideateImage: require("../Images/Credentials_Ideate.png"),
     prototypeImage: require("../Images/Credentials_Prototype.png"),
-    finalSolutionImage: require("../Images/finalSolution_Credentials.png")
-    
+    finalSolutionImage: require("../Images/finalSolution_Credentials.png"),
   },
   {
     id: 2,
@@ -88,10 +88,11 @@ const projectData = [
     finalSolution:
       "After finalising data we received from all the test users I made some minor adjustments to the prototype and could confidently push it over to the developers to build. \n \n We will continue refining and make any further adjustments in the future as we get more feedback from all our users.",
     headerImage: require("../Images/RequestCredentialFinal.png"),
+    empathiseImage: require("../Images/discoverImagePlaceholder02.png"),
     researchImage: require("../Images/ARW_Research.png"),
     ideateImage: require("../Images/ARW_Ideate.png"),
     prototypeImage: require("../Images/ARW_Prototype.png"),
-    finalSolutionImage: require("../Images/finalSolution_ARW.png")
+    finalSolutionImage: require("../Images/finalSolution_ARW.png"),
   },
 ];
 
