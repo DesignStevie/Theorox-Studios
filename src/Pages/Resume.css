@@ -8,9 +8,6 @@
 
 .experienceContainer,
 .educationContainer {
-  background: #fafafa;
-  padding: 1.5rem;
-  border-radius: 1rem;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
@@ -20,9 +17,15 @@
 .experienceDetails,
 .educationDetails {
   width: 75%;
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 .experienceCompanyLogo,
 .educationCompanyLogo {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #E0E0E0;
   width: 25%;
   display: flex;
   align-items: center;
@@ -61,20 +64,25 @@
   font: 0.875;
   color: #828282;
 }
-
+.experienceDetails li, .experienceDescription{
+  color:#2e2e2e;
+}
 @media only screen and (max-width: 768px) {
   .experienceContainer,
   .educationContainer {
     flex-direction: column;
+    gap:0rem;
   }
 
   .experienceDetails,
   .educationDetails {
-    width: 100%;
+    width: fit-content;
   }
 
   .experienceCompanyLogo,
   .educationCompanyLogo {
-    width: 50%;
+    width:max-content;
+    border: none;
+    padding: 1rem 0rem;
   }
 }

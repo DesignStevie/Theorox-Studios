@@ -104,12 +104,17 @@ function Resume() {
               <p className="experienceDate">January 2022 - Current</p>
               <br />
               <p className="experienceDescription">
-                Managing and supporting 2-4 squads with various UX tasks
-                including - User Research & Interviews, Conduct User Testing,
-                Creating UI, Facilitating Design Sprints and various other
-                workshops. I worked across multiple platforms including Web
-                Apps, Desktop Apps, and Mobile Apps.
+              Managing and supporting 2-4 squads with various UX tasks including, working across multiple platforms including Web Apps, Desktop Apps, and Mobile Apps.
               </p>
+              <ul>
+                <li>Conducting interviews with stakeholders & customers.</li>
+                <li>Research Strategy & Competitor Analysis.</li>
+                <li>Creating low to high fidelity User Interfaces.</li>
+                <li>Conduct User Testing.</li>
+                <li>Facilitating Design Sprints and various other workshops.</li>
+                <li>Keeping up to date with the latest UX/UI trends.</li>
+                <li>Designing new and maintaining design systems.</li>
+              </ul>
             </div>
           </div>
           <div className="experienceContainer">
@@ -152,12 +157,17 @@ function Resume() {
               <p className="experienceDate">January 2021 - January 2022</p>
               <br />
               <p className="experienceDescription">
-                Working with multiple diverse clients, designing content for
-                their businesses, ranging from new/rebrand logos, business
-                cards, flyer's, posters, signage, marketing posts and many other
-                deliverables, but mainly focusing on designing/developing
-                websites
+              Working with multiple diverse clients, designing content for their businesses, ranging from:
               </p>
+              <ul>
+                <li>New/rebrand logos.</li>
+                <li>Business cards.</li>
+                <li>Flyer's.</li>
+                <li>Posters.</li>
+                <li>Signage.</li>
+                <li>Marketing.</li>
+                <li>Designing and developing websites.</li>
+              </ul>
             </div>
           </div>
           <div className="experienceContainer">
@@ -185,11 +195,14 @@ function Resume() {
               <p className="experienceDate">October 2018 - January 2021</p>
               <br />
               <p className="experienceDescription">
-                Working with the latest cellular technologies, assisting
-                customers with great service. Selling mobile plans, cellular
-                devices and broadband connections. Constantly working towards
-                meeting a monthly target and cash handling.
+              Working with the latest cellular technologies, assisting customers with excellent customer service by:
               </p>
+              <ul>
+                <li>Selling mobile plans.</li>
+                <li>Selling home and mobile accessories.</li>
+                <li>Cellular devices and broadband connections. </li>
+                <li>Working towards meeting monthly targets.</li>
+              </ul>
             </div>
           </div>
         </div>

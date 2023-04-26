@@ -35,6 +35,11 @@
   gap:1.5rem;
 }
 
+.workitem-content h1{
+  color: #E7E5FF;
+  line-height: 3.5rem;
+}
+
 .workitem-container h4{
   font-size: 1rem;
   color: #4F4F4F;
