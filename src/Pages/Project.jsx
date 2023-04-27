@@ -147,11 +147,12 @@ function Project(myProjectData) {
                       alt="project"
                     />
                     <div className="workitem-content">
+                    <h1>0{project.id + 1}</h1>
                       <h2 className="pageHeadingPurpleSmall">
                         {" "}
                         {project.projectName}
                       </h2>
-                      <h4> {project.short_description}</h4>
+                      <p> {project.short_description}</p>
                       <button className="roundbutton secondary-button">
                         View Project
                       </button>

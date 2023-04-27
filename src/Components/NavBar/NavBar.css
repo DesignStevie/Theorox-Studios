@@ -1,80 +1,84 @@
-.sidenav-container{
-    width:100%;
-    background-color: #fff;
-    position: fixed;
-    top:0;
-    left:0;
-    height: 3.5rem;
-    filter: drop-shadow(0rem 0.25rem 0.5rem rgb(30 22 115 / 0.1));
-    align-items: center;
-    z-index: 100;
+.sidenav-container {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.5rem;
+  filter: drop-shadow(0rem 0.25rem 0.5rem rgb(30 22 115 / 0.1));
+  align-items: center;
+  z-index: 100;
 }
 
-.sidenav-item-container{
-    max-width: 60rem;
-    min-width: none;
-    height: inherit;
-    margin: 0 auto;
+.sidenav-item-container {
+  max-width: 60rem;
+  min-width: none;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0rem 1rem;
+}
+.navLogo {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 0rem 1rem;
 }
-.sidenav-container :nth-child(2){
-   margin-left: auto;
+.sidenav-container :nth-child(2) {
+  margin-left: auto;
 }
 
-.nav-item{
-    color: #2e2e2e;
-    text-decoration: none;
+.nav-item {
+  color: #2e2e2e;
+  text-decoration: none;
 }
 
 .selected {
-    font-weight: 500;
-    color: #5D4FFF !important;
+  font-weight: 500;
+  color: #5d4fff !important;
 }
 
 .menu-selected .sidenav-item .sidenav-svg {
-    fill: #fff;
+  fill: #fff;
 }
 
-.mobile-menu-container{
-    display: none;
+.mobile-menu-container {
+  display: none;
 }
 
-.sidenav-mobile{
-    flex-direction: row;
-    height: inherit;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 0rem 1rem;
+.sidenav-mobile {
+  flex-direction: row;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
 }
 
-.menu-opened{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-    background-color: rgba(255 255 255 /0.95);
-    padding: 1rem 1rem;
+.menu-opened {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgba(255 255 255 /0.95);
+  padding: 1rem 1rem;
 }
-.menu-closed{
-    display: none;
+.menu-closed {
+  display: none;
 }
 
-.nav-item-mobile{
-    text-decoration: none;
-    color: #2e2e2e;
-    margin-left: auto;
+.nav-item-mobile {
+  text-decoration: none;
+  color: #2e2e2e;
+  margin-left: auto;
 }
 
 @media only screen and (max-width: 768px) {
-    .sidenav-item-container{
-        display: none;
-    }
-    .mobile-menu-container{
-        height: inherit;
-        display: block;
-    }
+  .sidenav-item-container {
+    display: none;
+  }
+  .mobile-menu-container {
+    height: inherit;
+    display: block;
+  }
 }

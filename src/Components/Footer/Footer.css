@@ -54,6 +54,9 @@
   color: #bdbdbd;
   font-weight: 300;
 }
+.footer-madeby p{
+  font-size: 0.875rem;
+}
 
 @media only screen and (max-width: 650px) {
   .footer-container {

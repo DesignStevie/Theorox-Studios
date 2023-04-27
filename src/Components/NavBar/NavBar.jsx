@@ -7,12 +7,13 @@ function NavBar() {
   return (
     <div className="sidenav-container">
       <div className="mobile-menu-container">
-        <div className="sidenav-mobile">
+        <div className="sidenav-mobile">         
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive ? "nav-item selected" : "nav-item "
-            }end
+            }
+            end
           >
             SO.
           </NavLink>
@@ -51,7 +52,8 @@ function NavBar() {
             to="/"
             className={({ isActive }) =>
               isActive ? "nav-item-mobile selected" : "nav-item-mobile"
-            }end
+            }
+            end
           >
             Home
           </NavLink>
@@ -71,23 +73,54 @@ function NavBar() {
           >
             Resume
           </NavLink>
-          <NavLink
-            to="/#contact"
-            className="nav-item-mobile"
-          >
+          <NavLink to="/#contact" className="nav-item-mobile">
             Contact
           </NavLink>
         </div>
       </div>
 
       <div className="sidenav-item-container">
+        <NavLink to="/" className="navLogo" end>
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              width="32"
+              height="32"
+              rx="16"
+              fill="url(#paint0_linear_1150_545)"
+            />
+            <path
+              d="M24.1858 12.1303L19.3047 16.9979L18.4907 16.1862L21.7496 12.9421L19.3076 10.5068L16.0517 13.7538L12.7957 10.5068L10.3595 12.9449L13.6126 16.189L12.7986 16.9979L7.91755 12.1303L5.47559 14.5655L14.4237 23.489C15.3211 24.3839 16.7794 24.3839 17.6768 23.489L26.6249 14.5655L24.1829 12.1303H24.1858ZM16.8657 19.4331L16.0517 20.242L15.2406 19.4331L16.0517 18.6214L16.8657 19.4331Z"
+              fill="white"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_1150_545"
+                x1="16"
+                y1="-5.60001"
+                x2="41.7369"
+                y2="7.54993"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#5D4FFF" />
+                <stop offset="1" stopColor="#BC4FFF" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </NavLink>
         <NavLink
           to="/"
           className={({ isActive }) =>
             isActive ? "nav-item selected" : "nav-item "
-          }end
+          }
+          end
         >
-          SO.
+          Home
         </NavLink>
         <NavLink
           to="/my-work"
@@ -105,10 +138,7 @@ function NavBar() {
         >
           Resume
         </NavLink>
-        <NavLink
-          to="/#contact"
-          className="nav-item"
-        >
+        <NavLink to="/#contact" className="nav-item">
           Contact
         </NavLink>
       </div>

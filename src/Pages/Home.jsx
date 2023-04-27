@@ -93,10 +93,10 @@ function Home() {
         <div className="sectionHeading">
           <h2>Get in contact</h2>
           <div className="contactContainer">
-            <h4>
+            <p>
               Let’s have a chat, maybe even a coffee? Fire an email to
               <b> stevenodendaal98@gmail.com</b>
-            </h4>
+            </p>
             <a href="mailto: stevenodendaal98@gmail.com">
               <button className="roundbutton primary-button">Let's chat</button>
             </a>

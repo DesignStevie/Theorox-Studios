@@ -1,3 +1,16 @@
+:root{
+  --primaryPurple: #5D4FFF;
+  --secondaryPurple: #E7E5FF;
+  --tertiaryPurple: #F7F6FF;
+  --pink: #BD4FFF;
+  --primaryGrey: #333;
+  --secondaryGrey: #4F4F4F;
+  --tertiaryGrey: #EEE;
+  --backgroundGrey: #FAFAFA;
+  --globalWhite: #FFF;
+
+}
+
 body,
 html {
   scroll-behavior: smooth;
@@ -31,24 +44,30 @@ button{
 }
 
 h4 {
-  font-weight: 300;
   font-size: 1rem;
+  line-height: 0.75rem;
 }
+
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
+  line-height: 1rem;
 }
 h2 {
   font-size: 2rem;
   font-weight: 600;
+  line-height: 1.5rem;
 }
 
 h1 {
   font-size: 4rem;
+  line-height: 3rem;
+  font-weight: 600;
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 b {
   font-weight: 600;
@@ -74,7 +93,7 @@ b {
 
 .greyBackground{
   margin: 0 auto;
-  background: #FAFAFA;
+  background: var(--backgroundGrey)
 }
 
 .page-container {
@@ -82,13 +101,6 @@ b {
 }
 /* ---------- Other ---------- */
 
-.headerLineLarge {
-  width: 4rem;
-  background-color: #fff;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  margin: 4rem 0rem;
-}
 .pageHeadingWhite {
   font-weight: 600;
   font-size: 4rem;
@@ -98,14 +110,14 @@ b {
 .pageHeadingPurple {
   font-weight: 600;
   font-size: 4rem;
-  color: #5D4FFF;
+  color: var(--primaryPurple);
   margin-bottom: 4rem;
 }
 
 .pageHeadingPurpleSmall{
   font-weight: 600;
   font-size: 2rem;
-  color: #5D4FFF;
+  color: var(--primaryPurple);
 }
 
 code {
