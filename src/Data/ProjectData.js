@@ -8,7 +8,7 @@ const projectData = [
     timeframe: " Oct 2022 - Feb 2023",
     short_description:
       "Creating a cloud security management solution for cardholder and building control.",
-    image: require("../Images/ProjectTileOnboarding.png"),
+    image: require("../Images/tile_image_webclient.png"),
     problem:
       "One of my squad's main focus was to shift a pre-existing on-premise software to an all-cloud solution while overhauling and improving all usability with new and existing customers. \n \n A large feature that we needed to overcome was an onboarding process of new Cardholder/Users to the site, this would be a new feature compared to the on-premise software but still utilising it’s existing features. \n \n I took to the task working with my squad in an agile environment to iterate on the feature to create a feasible onboarding solution.",
     understand:
@@ -39,7 +39,7 @@ const projectData = [
     timeframe: " Jan 2022 - Apr 2022",
     short_description:
       "Revamping and adding a 2FA Solution to a pre-existing mobile credential app for IOS & Android.",
-    image: require("../Images/ProjectTileCredentials.png"),
+    image: require("../Images/tile_image_credentials.png"),
     problem:
       "When developing our Cloud Security Solution we needed to create a 2FA (Two Factor Authenticator) to better secure the login process to Command Centre Web using our existing Mobile Credential App. \n \n I took to this task working with my squad in an agile environment to create the feature and release it as soon as possible. ",
     understand:
@@ -72,7 +72,7 @@ const projectData = [
       "Creating a new self service credential and access management cloud solution.",
     long_description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n \n Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
-    image: require("../Images/ProjectTileCredentialRequest.png"),
+    image: require("../Images/tile_image_arw.png"),
     problem:
       "Another squads main focus was to design and develop a full Cloud Access Management solution for credential and access control that was customer driving in user experience. \n \n One of many features, we needed to create an MVP solution for the end requesters (i.e Employees) to enable them to quickly and effectively request new credentials from their organization and could be processed by the corresponding approvers (i.e HR Admins) within the system. \n \n I took to this task working with my squad in an agile environment to iterate on this feature with our customers to create a viable solution. ",
     understand:
