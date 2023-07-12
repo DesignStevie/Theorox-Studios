@@ -130,14 +130,14 @@ function NavBar() {
         >
           Work
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/resume"
           className={({ isActive }) =>
             isActive ? "nav-item selected" : "nav-item "
           }
         >
           Resume
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/#contact" className="nav-item">
           Contact
         </NavLink>

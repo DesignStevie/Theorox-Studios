@@ -34,14 +34,14 @@ function Footer() {
           >
             My Work
           </Link>
-          <Link
+          {/* <Link
             to={"/resume"}
             className="footerItem"
           >
             Resume
-          </Link>
+          </Link> */}
           <Link
-            to={"/resume"}
+            to="/#contact"
             className="footerItem"
           >
             Contact
