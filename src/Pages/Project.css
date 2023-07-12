@@ -27,7 +27,7 @@
 
 .projectIntroductionText {
   white-space: pre-line;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .projectDetails{
@@ -36,8 +36,8 @@
   flex-direction: column;
   justify-content: space-between;
   min-width: 30%;
-  background: #f6f6f6;
-  padding: 2rem;
+  background: #eee;
+  padding: 1.5rem;
   border-radius: 1rem;
 }
 
@@ -53,11 +53,11 @@
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .processName {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #5d4fff;
 }
 
@@ -75,7 +75,7 @@
 .process-text {
   white-space: pre-line;
   vertical-align: bottom;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #2e2e2e;
 }
 .process-textSolution {

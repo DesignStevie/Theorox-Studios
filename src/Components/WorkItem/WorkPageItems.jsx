@@ -15,12 +15,12 @@ function WorkPageItems() {
           >
             <img className="project-image" src={project.image} alt="project" />
             <div className="workitem-content">
-              {/* <h1>0{project.id + 1}</h1> */}
+              <h1>0{project.id + 1}</h1>
               <h2 className="pageHeadingPurpleSmall"> {project.projectName}</h2>
               <p> {project.short_description}</p>
-              {/* <button className="roundbutton secondary-button">
+              <button className="roundbutton secondary-button">
                 View Project
-              </button> */}
+              </button>
             </div>
           </Link>
         );

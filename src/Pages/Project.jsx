@@ -2,7 +2,7 @@ import { React } from "react";
 import "./Project.css";
 import { useParams, Link } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
-//import NavBar from "../Components/NavBar/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 import projectData from "../Data/ProjectData";
 
 function Project(myProjectData) {
@@ -13,9 +13,9 @@ function Project(myProjectData) {
   });
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
       <div className="page-container">
-        <div className="whiteBackground">
+        <div className="greyBackground">
           <div className="containerPlain">
             {/* PROJECT --- HEADING */}
             <h1 className="pageHeadingPurple">{displayProject.projectName}</h1>
@@ -23,9 +23,9 @@ function Project(myProjectData) {
               <img src={displayProject.headerImage} alt="Final Solution" />
             </div>
             <div className="projectDetailsContainer">
-              <div className="projectIntroductionText">
+              <p className="projectIntroductionText">
                 {displayProject.problem}
-              </div>
+              </p>
               <div className="projectDetails">
                 <div className="details">
                   <h4>COMPANY</h4>
@@ -53,7 +53,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {displayProject.empathiseImage && (
-          <div className="whiteBackground">
+          <div className="greyBackground">
             <div className="processImage">
               <img src={displayProject.empathiseImage} alt="Final Solution" />
             </div>
@@ -71,7 +71,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {displayProject.researchImage && (
-          <div className="whiteBackground">
+          <div className="greyBackground">
             <div className="processImage">
               <img src={displayProject.researchImage} alt="Final Solution" />
             </div>
@@ -88,7 +88,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {displayProject.ideateImage && (
-          <div className="whiteBackground">
+          <div className="greyBackground">
             <div className="processImage">
               <img src={displayProject.ideateImage} alt="Final Solution" />
             </div>
@@ -105,7 +105,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {displayProject.prototypeImage && (
-          <div className="whiteBackground">
+          <div className="greyBackground">
             <div className="processImage">
               <img src={displayProject.prototypeImage} alt="Final Solution" />
             </div>
@@ -122,7 +122,7 @@ function Project(myProjectData) {
           </div>
         </div>
         {/* PROJECT --- FINAL SOLUTION */}
-        <div className="whiteBackground">
+        <div className="greyBackground">
           <div className="process-image">
             <img
               src={displayProject.finalSolutionImage}
@@ -147,15 +147,15 @@ function Project(myProjectData) {
                       alt="project"
                     />
                     <div className="workitem-content">
-                    {/* <h1>0{project.id + 1}</h1> */}
+                    <h1>0{project.id + 1}</h1>
                       <h2 className="pageHeadingPurpleSmall">
                         {" "}
                         {project.projectName}
                       </h2>
                       <p> {project.short_description}</p>
-                      {/* <button className="roundbutton secondary-button">
+                      <button className="roundbutton secondary-button">
                         View Project
-                      </button> */}
+                      </button>
                     </div>
                   </Link>
                 );

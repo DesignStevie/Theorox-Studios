@@ -23,7 +23,6 @@ html {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fbfbfb;
 }
 
 /* ---------- Typography ---------- */
@@ -78,12 +77,11 @@ b {
 
 .containerPlain {
   padding: 4rem 1rem;
-  max-width: 75rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
 .colouredBackground {
-  position: relative;
   margin: 0 auto;
   background: rgb(189, 79, 255);
   background: linear-gradient(
@@ -93,9 +91,13 @@ b {
   );
 }
 
-.whiteBackground{
+.greyBackground{
   margin: 0 auto;
-  background: var(--globalWhite)
+  background: var(--backgroundGrey)
+}
+
+.page-container {
+  margin-top: 3.5rem;
 }
 /* ---------- Other ---------- */
 
@@ -114,7 +116,7 @@ b {
 
 .pageHeadingPurpleSmall{
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primaryPurple);
 }
 
@@ -124,8 +126,5 @@ code {
 }
 
 @media only screen and (max-width: 480px) {
-  .pageHeadingPurpleSmall{
-    font-size: 2rem;
-    line-height: 1.2;
-  }
+
 }

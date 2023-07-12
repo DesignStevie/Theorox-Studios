@@ -1,108 +1,105 @@
-.headerGradientBackground {
-  position: relative;
-  top: 0;
-  background-image: linear-gradient(
-    to right,
-    #5d4fff,
-    #7a4fff,
-    #934fff,
-    #a84fff,
-    #bc4fff
-  );
+.header-background {
+  width: 100%;
   height: 100vh;
-}
-.bgImage {
   position: absolute;
+  z-index: -10;
   top: 0;
-  max-width: 100%;
-  min-width: 1920px;
-}
-.greetingContainer {
-  margin-top: 10rem;
-  display: inline-block;
-}
-.name,
-.role {
-  font-size: 4rem;
-  font-weight: 300;
-  color: #fff;
-}
-.svgDots {
-  position: absolute;
-  top: 11.5rem;
+  left: 0;
   right: 0;
+  overflow: hidden;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
-.scrollArrow{
-  margin-top: 4rem;
-  position: relative;
-  flex: 1;
+.header-content h1 {
+  font-weight: 600;
 }
-.dotText {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: var(--globalWhite);
-}
-.dotText p{
-  font-size: 1.25rem;
-}
-.vl {
-  border-left: 2px solid var(--globalWhite);
-  height: calc(100% - 2rem);
-  position: absolute;
-  left: .35rem;
-  top: .75rem;
-}
-.scrollMouse{
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-}
-.showYou {
-  position: absolute;
-  margin-top: 6rem;
-  margin-left: 2rem;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.2rem;
-}
-.arrow{
-  margin-bottom: 4rem;
-  margin-left: -0.6rem;
-
-}
-.arrow svg{
-  cursor: pointer;
-  transform: scale(100%);
-  transition: transform ease 300ms;
-}
-.arrow svg:hover{
-  transform: scale(125%);
-}
-
-.contactContainerWrapper {
-  position: absolute;
-  bottom: 4rem;
-  right: 0;
-}
-.contactContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1rem;
-}
-.email {
-  color: var(--globalWhite);
-  font-weight: 400;
-}
-.headerContainer {
-  z-index: 1;
-  position: relative;
+.header-container {
   height: 100vh;
   padding: 0rem 2rem;
-  max-width: 75rem;
+  max-width: 60rem;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+}
+.sphere {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.first,
+.second,
+.third {
+  background: rgb(93, 79, 255);
+  background: linear-gradient(
+    125deg,
+    rgba(93, 79, 255, 1) 0%,
+    rgba(189, 79, 255, 1) 100%
+  );
+}
+
+.first {
+  width: 7rem;
+  height: 7rem;
+  top: 25%;
+  left: 50%;
+  z-index: -20;
+  animation: moveFirst 3s infinite;
+}
+
+@keyframes moveFirst {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.75rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.second {
+  width: 12rem;
+  height: 12rem;
+  bottom: 0;
+  z-index: -21;
+  left: 40vw;
+  animation: moveSecond 4s infinite;
+}
+
+@keyframes moveSecond {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.75rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.third {
+  width: calc(100vh / 1.8);
+  height: calc(100vh / 1.8);
+  right: -6rem;
+  top: -2rem;
+  z-index: -22;
+  animation: moveThird 5s infinite;
+}
+
+@keyframes moveThird {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header-content {
@@ -143,10 +140,6 @@
   color: #fff;
 }
 
-.paragraph-content p{
-  font-size: 1.25rem !important;
-}
-
 .header-container h1 {
   font-size: 4rem;
   margin-top: -1rem;
@@ -184,7 +177,8 @@
 }
 
 .roundbutton {
-  padding: 0 2.5rem;
+  min-width: 13rem;
+  max-width: 13rem;
   height: 3.5rem;
   border-radius: 1rem;
   border: none;
@@ -194,20 +188,6 @@
   background: rgba(93, 79, 255, 0.05);
   color: #5d4fff;
   font-weight: 500;
-}
-
-.tertiaryButton {
-  background: none;
-  font-weight: 500;
-  border: 2px solid #fff;
-  color: #fff;
-  transform: scale(100%);
-  transition: transform ease 200ms;
-}
-
-.tertiaryButton:hover {
-  background: rgba(255 255 255 / 0.15);
-  transform: scale(105%);
 }
 
 .linkButton {
@@ -234,7 +214,6 @@
 }
 
 .aboutMeContainer {
-  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -242,34 +221,26 @@
 .paragraph-content {
   width: 60%;
 }
+
+.profileImage {
+  width: 40%;
+  object-fit: cover;
+}
 .paragraph-content p {
   font-size: 1rem;
   font-weight: 300;
 }
 
-.profileImage {
-  width: 35%;
-  object-fit: cover;
-  position: absolute;
-  right:0;
-  top:-5.5rem;
-  z-index:  1;
+/*Contact Form*/
+.contactContainer {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.aboutDots{
-  position: absolute;
-  right: 4rem;
-  top:-4rem;
-}
-.aboutbgImage{
-  position: absolute;
-  width:100%;
-  height: inherit;
-  top: 0;
-}
-
 .contactSocials {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 a {
@@ -279,21 +250,11 @@ a {
 /*---------------------*/
 
 @media only screen and (max-width: 480px) {
-  .greetingContainer {
-    margin-top: 4rem;
-  }
-  .svgDots{
-    right: 2rem;
-  }
-  .contactContainerWrapper{
-    right: 2rem;
-  }
-
   .contactContainer {
     max-width: 100%;
   }
-  .name, .role {
-    font-size: 2.5rem;
+  .header-content h1 {
+    font-size: 3rem;
   }
   .contactContainer {
     flex-direction: column;
@@ -327,17 +288,7 @@ a {
     gap: 1.5rem;
     align-items: center;
   }
-  .aboutDots{
-    bottom: 15rem;
-    top: auto;
-  }
-  .aboutbgImage{
-    width: 600%;
-  }
   .profileImage {
-    position: relative;
-    top:auto;
-    right: 1rem;
     width: 80%;
   }
   .paragraph-content {

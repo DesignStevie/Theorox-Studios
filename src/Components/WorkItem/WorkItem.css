@@ -1,7 +1,7 @@
 .workitems {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .workitem-container {
   text-decoration: none;
@@ -13,7 +13,7 @@
   height: auto;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 4rem;
   align-items: center;
 }
 
@@ -56,7 +56,7 @@
   padding: 1rem 4rem 1rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .workitem-content h1 {
@@ -73,19 +73,12 @@ Link {
   text-decoration: none;
 }
 .workitem-content p {
-  color: #4F4F4F;
+  color: #2e2e2e;
   font-weight: 300;
-  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .workitem-content{
-    gap:1rem
-  }
-  .workitem-content p{
-    font-size: 1.25rem;
-  }
   .workitem-container {
     height:auto;
     display: block;
